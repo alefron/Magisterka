@@ -158,3 +158,10 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+/youtubeSALAMIDownloader/salami_internet_archive_audios/
+/youtubeSALAMIDownloader/salami_youtube_audios/
+/youtubeSALAMIDownloader/.idea/
+/youtubeSALAMIDownloader/youtube_audios/
+/youtubeSALAMIDownloader/youtube_audios_wav/
+/youtubeSALAMIDownloader/salami_public_fpdb.pklz
+/youtubeSALAMIDownloader/match_audio.py
