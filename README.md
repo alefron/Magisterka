@@ -34,6 +34,7 @@ salami_youtube_pairings.csv - plik parujący piosenki do których oryginalnie ni
 źródło: https://github.com/jblsmith/matching-salami
 
 **artykuły:**
+
 https://grrrr.org/pub/ullrich_schlueter_grill-2014-ismir.pdf
 https://studenttheses.uu.nl/bitstream/handle/20.500.12932/36522/bachelor%20thesis%20leander%20van%20boven.pdf?sequence=1&isAllowed=y
 https://grrrr.org/data/pub/grill_schlueter-2015-ismir.pdf
