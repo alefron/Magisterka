@@ -1,0 +1,218 @@
+{
+    "SONG_ID": 1,
+    "Feature": {
+        "Name": "MFCC",
+        "Vectors": [
+            [
+                [
+                    {"real": 111, "imag": 1},
+                    {"real": 112, "imag": 2},
+                    {"real": 113, "imag": 3},
+                    {"real": 114, "imag": 4},
+                    {"real": 115, "imag": 5}
+                ],
+                [
+                    {"real": 121, "imag": 11},
+                    {"real": 122, "imag": 22},
+                    {"real": 123, "imag": 33},
+                    {"real": 124, "imag": 44},
+                    {"real": 125, "imag": 55}
+                ],
+                [
+                    {"real": 131, "imag": 0.0},
+                    {"real": 132, "imag": 0.0},
+                    {"real": 133, "imag": 0.0},
+                    {"real": 134, "imag": 0.0},
+                    {"real": 135, "imag": 0.0}
+                ],
+                [
+                    {"real": 141, "imag": 0.0},
+                    {"real": 142, "imag": 0.0},
+                    {"real": 143, "imag": 0.0},
+                    {"real": 144, "imag": 0.0},
+                    {"real": 145, "imag": 0.0}
+                ]
+            ],
+            [
+                [
+                    {"real": 211, "imag": 0.0},
+                    {"real": 212, "imag": 0.0},
+                    {"real": 213, "imag": 0.0},
+                    {"real": 214, "imag": 0.0},
+                    {"real": 215, "imag": 0.0}
+                ],
+                [
+                    {"real": 221, "imag": 0.0},
+                    {"real": 222, "imag": 0.0},
+                    {"real": 223, "imag": 0.0},
+                    {"real": 224, "imag": 0.0},
+                    {"real": 225, "imag": 0.0}
+                ],
+                [
+                    {"real": 231, "imag": 0.0},
+                    {"real": 232, "imag": 0.0},
+                    {"real": 233, "imag": 0.0},
+                    {"real": 234, "imag": 0.0},
+                    {"real": 235, "imag": 0.0}
+                ],
+                [
+                    {"real": 241, "imag": 0.0},
+                    {"real": 242, "imag": 0.0},
+                    {"real": 243, "imag": 0.0},
+                    {"real": 244, "imag": 0.0},
+                    {"real": 245, "imag": 0.0}
+                ]
+            ],
+            [
+                [
+                    {"real": 311, "imag": 0.0},
+                    {"real": 312, "imag": 0.0},
+                    {"real": 313, "imag": 0.0},
+                    {"real": 314, "imag": 0.0},
+                    {"real": 315, "imag": 0.0}
+                ],
+                [
+                    {"real": 321, "imag": 0.0},
+                    {"real": 322, "imag": 0.0},
+                    {"real": 323, "imag": 0.0},
+                    {"real": 324, "imag": 0.0},
+                    {"real": 325, "imag": 0.0}
+                ],
+                [
+                    {"real": 331, "imag": 0.0},
+                    {"real": 332, "imag": 0.0},
+                    {"real": 333, "imag": 0.0},
+                    {"real": 334, "imag": 0.0},
+                    {"real": 335, "imag": 0.0}
+                ],
+                [
+                    {"real": 341, "imag": 0.0},
+                    {"real": 342, "imag": 0.0},
+                    {"real": 343, "imag": 0.0},
+                    {"real": 344, "imag": 0.0},
+                    {"real": 345, "imag": 0.0}
+                ]
+            ],
+            [
+                [
+                    {"real": 411, "imag": 0.0},
+                    {"real": 412, "imag": 0.0},
+                    {"real": 413, "imag": 0.0},
+                    {"real": 414, "imag": 0.0},
+                    {"real": 415, "imag": 0.0}
+                ],
+                [
+                    {"real": 421, "imag": 0.0},
+                    {"real": 422, "imag": 0.0},
+                    {"real": 423, "imag": 0.0},
+                    {"real": 424, "imag": 0.0},
+                    {"real": 425, "imag": 0.0}
+                ],
+                [
+                    {"real": 431, "imag": 0.0},
+                    {"real": 432, "imag": 0.0},
+                    {"real": 433, "imag": 0.0},
+                    {"real": 434, "imag": 0.0},
+                    {"real": 435, "imag": 0.0}
+                ],
+                [
+                    {"real": 441, "imag": 0.0},
+                    {"real": 442, "imag": 0.0},
+                    {"real": 443, "imag": 0.0},
+                    {"real": 444, "imag": 0.0},
+                    {"real": 445, "imag": 0.0}
+                ]
+            ],
+            [
+                [
+                    {"real": 511, "imag": 0.0},
+                    {"real": 512, "imag": 0.0},
+                    {"real": 513, "imag": 0.0},
+                    {"real": 514, "imag": 0.0},
+                    {"real": 515, "imag": 0.0}
+                ],
+                [
+                    {"real": 521, "imag": 0.0},
+                    {"real": 522, "imag": 0.0},
+                    {"real": 523, "imag": 0.0},
+                    {"real": 524, "imag": 0.0},
+                    {"real": 525, "imag": 0.0}
+                ],
+                [
+                    {"real": 531, "imag": 0.0},
+                    {"real": 532, "imag": 0.0},
+                    {"real": 533, "imag": 0.0},
+                    {"real": 534, "imag": 0.0},
+                    {"real": 535, "imag": 0.0}
+                ],
+                [
+                    {"real": 541, "imag": 0.0},
+                    {"real": 542, "imag": 0.0},
+                    {"real": 543, "imag": 0.0},
+                    {"real": 544, "imag": 0.0},
+                    {"real": 545, "imag": 0.0}
+                ]
+            ],
+            [
+                [
+                    {"real": 611, "imag": 0.0},
+                    {"real": 612, "imag": 0.0},
+                    {"real": 613, "imag": 0.0},
+                    {"real": 614, "imag": 0.0},
+                    {"real": 615, "imag": 0.0}
+                ],
+                [
+                    {"real": 621, "imag": 0.0},
+                    {"real": 622, "imag": 0.0},
+                    {"real": 623, "imag": 0.0},
+                    {"real": 624, "imag": 0.0},
+                    {"real": 625, "imag": 0.0}
+                ],
+                [
+                    {"real": 631, "imag": 0.0},
+                    {"real": 632, "imag": 0.0},
+                    {"real": 633, "imag": 0.0},
+                    {"real": 634, "imag": 0.0},
+                    {"real": 635, "imag": 0.0}
+                ],
+                [
+                    {"real": 641, "imag": 0.0},
+                    {"real": 642, "imag": 0.0},
+                    {"real": 643, "imag": 0.0},
+                    {"real": 644, "imag": 0.0},
+                    {"real": 645, "imag": 0.0}
+                ]
+            ],
+            [
+                [
+                    {"real": 711, "imag": 0.0},
+                    {"real": 712, "imag": 0.0},
+                    {"real": 713, "imag": 0.0},
+                    {"real": 714, "imag": 0.0},
+                    {"real": 715, "imag": 0.0}
+                ],
+                [
+                    {"real": 721, "imag": 0.0},
+                    {"real": 722, "imag": 0.0},
+                    {"real": 723, "imag": 0.0},
+                    {"real": 724, "imag": 0.0},
+                    {"real": 725, "imag": 0.0}
+                ],
+                [
+                    {"real": 731, "imag": 0.0},
+                    {"real": 732, "imag": 0.0},
+                    {"real": 733, "imag": 0.0},
+                    {"real": 734, "imag": 0.0},
+                    {"real": 735, "imag": 0.0}
+                ],
+                [
+                    {"real": 741, "imag": 0.0},
+                    {"real": 742, "imag": 0.0},
+                    {"real": 743, "imag": 0.0},
+                    {"real": 744, "imag": 0.0},
+                    {"real": 745, "imag": 0.0}
+                ]
+            ]
+        ]
+    }
+}
