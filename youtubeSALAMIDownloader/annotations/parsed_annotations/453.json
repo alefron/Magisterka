@@ -1,0 +1,114 @@
+{
+  "data": [
+    {
+      "duration": 0.875510204,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 13.172562358,
+      "value": "Intro",
+      "time": 0.875510204
+    },
+    {
+      "duration": 13.018004535000001,
+      "value": "Head",
+      "time": 14.048072562
+    },
+    {
+      "duration": 6.378798186000001,
+      "value": "Bridge",
+      "time": 27.066077097
+    },
+    {
+      "duration": 26.285215418999996,
+      "value": "Theme",
+      "time": 33.444875283
+    },
+    {
+      "duration": 0.0,
+      "value": "Instrumental",
+      "time": 59.730090702
+    },
+    {
+      "duration": 13.055736961999997,
+      "value": "Solo",
+      "time": 59.730090702
+    },
+    {
+      "duration": 12.94625850300001,
+      "value": "Bridge",
+      "time": 72.785827664
+    },
+    {
+      "duration": 0.0,
+      "value": "Instrumental",
+      "time": 85.732086167
+    },
+    {
+      "duration": 53.15226757400001,
+      "value": "Solo",
+      "time": 85.732086167
+    },
+    {
+      "duration": 0.0,
+      "value": "Instrumental",
+      "time": 138.884353741
+    },
+    {
+      "duration": 27.264217686999984,
+      "value": "Solo",
+      "time": 138.884353741
+    },
+    {
+      "duration": 25.992063492,
+      "value": "Bridge",
+      "time": 166.148571428
+    },
+    {
+      "duration": 0.0,
+      "value": "Instrumental",
+      "time": 192.14063492
+    },
+    {
+      "duration": 80.49553288000001,
+      "value": "Solo",
+      "time": 192.14063492
+    },
+    {
+      "duration": 33.456258503000015,
+      "value": "Theme",
+      "time": 272.6361678
+    },
+    {
+      "duration": 6.775759637999954,
+      "value": "Bridge",
+      "time": 306.092426303
+    },
+    {
+      "duration": 0.0,
+      "value": "Instrumental",
+      "time": 312.868185941
+    },
+    {
+      "duration": 34.17616780000003,
+      "value": "Solo",
+      "time": 312.868185941
+    },
+    {
+      "duration": 12.329115645999991,
+      "value": "Outro",
+      "time": 347.044353741
+    },
+    {
+      "duration": 0.6801360549999913,
+      "value": "Silence",
+      "time": 359.373469387
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 360.053605442
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "data": [
+    {
+      "duration": 0.417959183,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 154.768503402,
+      "value": "Exposition",
+      "time": 0.417959183
+    },
+    {
+      "duration": 154.515011337,
+      "value": "Exposition",
+      "time": 155.186462585
+    },
+    {
+      "duration": 6.287913833000005,
+      "value": "Transition",
+      "time": 309.701473922
+    },
+    {
+      "duration": 67.32562358199999,
+      "value": "Development",
+      "time": 315.989387755
+    },
+    {
+      "duration": 156.46179138399998,
+      "value": "Recap",
+      "time": 383.315011337
+    },
+    {
+      "duration": 6.182380952000017,
+      "value": "Silence",
+      "time": 539.776802721
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 545.959183673
+    }
+  ]
+}

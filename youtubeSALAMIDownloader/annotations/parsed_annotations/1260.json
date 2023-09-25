@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "duration": 6.478367346,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 42.169727892000004,
+      "value": "Intro",
+      "time": 6.478367346
+    },
+    {
+      "duration": 20.52782312899999,
+      "value": "Head",
+      "time": 48.648095238
+    },
+    {
+      "duration": 41.207891156,
+      "value": "Verse",
+      "time": 69.175918367
+    },
+    {
+      "duration": 13.750068028000001,
+      "value": "Bridge",
+      "time": 110.383809523
+    },
+    {
+      "duration": 0.0,
+      "value": "Instrumental",
+      "time": 124.133877551
+    },
+    {
+      "duration": 20.37158730099999,
+      "value": "Solo",
+      "time": 124.133877551
+    },
+    {
+      "duration": 40.966530612000014,
+      "value": "Verse",
+      "time": 144.505464852
+    },
+    {
+      "duration": 27.27185941100001,
+      "value": "Bridge",
+      "time": 185.471995464
+    },
+    {
+      "duration": 0.0,
+      "value": "Instrumental",
+      "time": 212.743854875
+    },
+    {
+      "duration": 59.872811791000004,
+      "value": "Solo",
+      "time": 212.743854875
+    },
+    {
+      "duration": 19.823219955000013,
+      "value": "Head",
+      "time": 272.616666666
+    },
+    {
+      "duration": 39.017868480999994,
+      "value": "Chorus",
+      "time": 292.439886621
+    },
+    {
+      "duration": 0.0,
+      "value": "Instrumental",
+      "time": 331.457755102
+    },
+    {
+      "duration": 78.31027210799999,
+      "value": "Solo",
+      "time": 331.457755102
+    },
+    {
+      "duration": 74.73471655399999,
+      "value": "Chorus",
+      "time": 409.76802721
+    },
+    {
+      "duration": 26.412448978999976,
+      "value": "Outro",
+      "time": 484.502743764
+    },
+    {
+      "duration": 10.654195012000002,
+      "value": "no-function",
+      "time": 510.915192743
+    },
+    {
+      "duration": 0.030498866000016278,
+      "value": "Silence",
+      "time": 521.569387755
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 521.599886621
+    }
+  ]
+}

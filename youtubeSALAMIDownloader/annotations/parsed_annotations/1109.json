@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "duration": 0.043537414,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 2.371337869,
+      "value": "no-function",
+      "time": 0.043537414
+    },
+    {
+      "duration": 25.681269841,
+      "value": "Intro",
+      "time": 2.414875283
+    },
+    {
+      "duration": 50.665941043000004,
+      "value": "Verse",
+      "time": 28.096145124
+    },
+    {
+      "duration": 25.876394557999987,
+      "value": "Interlude",
+      "time": 78.762086167
+    },
+    {
+      "duration": 50.99734693900001,
+      "value": "Verse",
+      "time": 104.638480725
+    },
+    {
+      "duration": 54.40954648499999,
+      "value": "Solo",
+      "time": 155.635827664
+    },
+    {
+      "duration": 25.40616780100001,
+      "value": "Solo",
+      "time": 210.045374149
+    },
+    {
+      "duration": 25.70328798099999,
+      "value": "Solo",
+      "time": 235.45154195
+    },
+    {
+      "duration": 25.86537414999998,
+      "value": "Solo",
+      "time": 261.154829931
+    },
+    {
+      "duration": 41.28673469400002,
+      "value": "Coda",
+      "time": 287.020204081
+    },
+    {
+      "duration": 59.556281178999996,
+      "value": "no-function",
+      "time": 328.306938775
+    },
+    {
+      "duration": 0.02902494300002445,
+      "value": "Silence",
+      "time": 387.863219954
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 387.892244897
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "data": [
+    {
+      "duration": 0.255419501,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 39.566802721,
+      "value": "Solo",
+      "time": 0.255419501
+    },
+    {
+      "duration": 6.735555554999998,
+      "value": "Bridge",
+      "time": 39.822222222
+    },
+    {
+      "duration": 33.453242630999995,
+      "value": "Solo",
+      "time": 46.557777777
+    },
+    {
+      "duration": 13.356417233000002,
+      "value": "Bridge",
+      "time": 80.011020408
+    },
+    {
+      "duration": 27.016417234000002,
+      "value": "Secondary-Theme",
+      "time": 93.367437641
+    },
+    {
+      "duration": 78.891496598,
+      "value": "Solo",
+      "time": 120.383854875
+    },
+    {
+      "duration": 6.6220408169999985,
+      "value": "Bridge",
+      "time": 199.275351473
+    },
+    {
+      "duration": 45.490362812,
+      "value": "Outro",
+      "time": 205.89739229
+    },
+    {
+      "duration": 4.79800453499999,
+      "value": "break",
+      "time": 251.387755102
+    },
+    {
+      "duration": 20.387120181,
+      "value": "Bridge",
+      "time": 256.185759637
+    },
+    {
+      "duration": 3.6778231289999894,
+      "value": "Silence",
+      "time": 276.572879818
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 280.250702947
+    }
+  ]
+}

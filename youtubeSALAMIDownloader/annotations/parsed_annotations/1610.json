@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "duration": 0.163265306,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 12.342698412,
+      "value": "Intro",
+      "time": 0.163265306
+    },
+    {
+      "duration": 16.602675737,
+      "value": "Verse",
+      "time": 12.505963718
+    },
+    {
+      "duration": 20.706870749,
+      "value": "Pre-Chorus",
+      "time": 29.108639455
+    },
+    {
+      "duration": 26.931133785999997,
+      "value": "Chorus",
+      "time": 49.815510204
+    },
+    {
+      "duration": 4.967551021000006,
+      "value": "Transition",
+      "time": 76.74664399
+    },
+    {
+      "duration": 15.697800453,
+      "value": "Verse",
+      "time": 81.714195011
+    },
+    {
+      "duration": 20.824580499000007,
+      "value": "Pre-Chorus",
+      "time": 97.411995464
+    },
+    {
+      "duration": 26.78054421799999,
+      "value": "Chorus",
+      "time": 118.236575963
+    },
+    {
+      "duration": 29.23707483000001,
+      "value": "Solo",
+      "time": 145.017120181
+    },
+    {
+      "duration": 3.9934013599999787,
+      "value": "no-function",
+      "time": 174.254195011
+    },
+    {
+      "duration": 20.735215420000003,
+      "value": "Pre-Chorus",
+      "time": 178.247596371
+    },
+    {
+      "duration": 31.013446712000018,
+      "value": "Chorus",
+      "time": 198.982811791
+    },
+    {
+      "duration": 15.509501134000004,
+      "value": "Outro",
+      "time": 229.996258503
+    },
+    {
+      "duration": 2.5024716549999937,
+      "value": "Silence",
+      "time": 245.505759637
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 248.008231292
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "data": [
+    {
+      "duration": 0.162539682,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 10.558344671,
+      "value": "Intro",
+      "time": 0.162539682
+    },
+    {
+      "duration": 10.567460318,
+      "value": "Verse",
+      "time": 10.720884353
+    },
+    {
+      "duration": 10.375873016,
+      "value": "Verse",
+      "time": 21.288344671
+    },
+    {
+      "duration": 10.530929705000002,
+      "value": "Verse",
+      "time": 31.664217687
+    },
+    {
+      "duration": 10.506371881999996,
+      "value": "Verse",
+      "time": 42.195147392
+    },
+    {
+      "duration": 10.434829932,
+      "value": "Chorus",
+      "time": 52.701519274
+    },
+    {
+      "duration": 10.482857142999997,
+      "value": "Verse",
+      "time": 63.136349206
+    },
+    {
+      "duration": 10.477006802000005,
+      "value": "Verse",
+      "time": 73.619206349
+    },
+    {
+      "duration": 10.590249434,
+      "value": "Verse",
+      "time": 84.096213151
+    },
+    {
+      "duration": 10.399160996999996,
+      "value": "Verse",
+      "time": 94.686462585
+    },
+    {
+      "duration": 10.503333334000004,
+      "value": "Chorus",
+      "time": 105.085623582
+    },
+    {
+      "duration": 10.583922901999998,
+      "value": "Chorus",
+      "time": 115.588956916
+    },
+    {
+      "duration": 10.448140589999994,
+      "value": "Verse",
+      "time": 126.172879818
+    },
+    {
+      "duration": 10.38843537400001,
+      "value": "Verse",
+      "time": 136.621020408
+    },
+    {
+      "duration": 10.572063491999984,
+      "value": "Verse",
+      "time": 147.009455782
+    },
+    {
+      "duration": 10.480770975000013,
+      "value": "Verse",
+      "time": 157.581519274
+    },
+    {
+      "duration": 10.511360544000013,
+      "value": "Chorus",
+      "time": 168.062290249
+    },
+    {
+      "duration": 10.473718820999977,
+      "value": "Chorus",
+      "time": 178.573650793
+    },
+    {
+      "duration": 10.509795918000009,
+      "value": "no-function",
+      "time": 189.047369614
+    },
+    {
+      "duration": 10.44802721100001,
+      "value": "Outro",
+      "time": 199.557165532
+    },
+    {
+      "duration": 7.992403627999977,
+      "value": "Fade-out",
+      "time": 210.005192743
+    },
+    {
+      "duration": 18.11022675800001,
+      "value": "no-function",
+      "time": 217.997596371
+    },
+    {
+      "duration": 2.3059637190000046,
+      "value": "Silence",
+      "time": 236.107823129
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 238.413786848
+    }
+  ]
+}

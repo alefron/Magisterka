@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "duration": 0.198095238,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 2.792743764,
+      "value": "Intro",
+      "time": 0.198095238
+    },
+    {
+      "duration": 13.711768707,
+      "value": "Verse",
+      "time": 2.990839002
+    },
+    {
+      "duration": 20.549773243000004,
+      "value": "no-function",
+      "time": 16.702607709
+    },
+    {
+      "duration": 9.167460317,
+      "value": "Fade-out",
+      "time": 37.252380952
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 46.419841269
+    }
+  ]
+}

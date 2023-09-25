@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "duration": 0.51664399,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 32.867959184,
+      "value": "Intro",
+      "time": 0.51664399
+    },
+    {
+      "duration": 32.505192744000006,
+      "value": "Theme",
+      "time": 33.384603174
+    },
+    {
+      "duration": 31.640045350999998,
+      "value": "Theme",
+      "time": 65.889795918
+    },
+    {
+      "duration": 30.830068028,
+      "value": "Theme",
+      "time": 97.529841269
+    },
+    {
+      "duration": 18.42585034000001,
+      "value": "Theme",
+      "time": 128.359909297
+    },
+    {
+      "duration": 16.992562357999986,
+      "value": "Theme",
+      "time": 146.785759637
+    },
+    {
+      "duration": 15.800839002000004,
+      "value": "Theme",
+      "time": 163.778321995
+    },
+    {
+      "duration": 15.990975056999986,
+      "value": "Theme",
+      "time": 179.579160997
+    },
+    {
+      "duration": 15.832199545999998,
+      "value": "Theme",
+      "time": 195.570136054
+    },
+    {
+      "duration": 15.839342404000007,
+      "value": "Theme",
+      "time": 211.4023356
+    },
+    {
+      "duration": 15.960589569000007,
+      "value": "Theme",
+      "time": 227.241678004
+    },
+    {
+      "duration": 15.921791382999999,
+      "value": "Theme",
+      "time": 243.202267573
+    },
+    {
+      "duration": 15.870090703000017,
+      "value": "Theme",
+      "time": 259.124058956
+    },
+    {
+      "duration": 15.424353741999994,
+      "value": "Theme",
+      "time": 274.994149659
+    },
+    {
+      "duration": 16.12759637199997,
+      "value": "Theme",
+      "time": 290.418503401
+    },
+    {
+      "duration": 8.079886621000014,
+      "value": "Theme",
+      "time": 306.546099773
+    },
+    {
+      "duration": 15.167029479000007,
+      "value": "Outro",
+      "time": 314.625986394
+    },
+    {
+      "duration": 2.699659863000022,
+      "value": "Silence",
+      "time": 329.793015873
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 332.492675736
+    }
+  ]
+}

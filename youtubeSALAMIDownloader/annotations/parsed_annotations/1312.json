@@ -1,0 +1,114 @@
+{
+  "data": [
+    {
+      "duration": 0.092879818,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 24.792244898,
+      "value": "Intro",
+      "time": 0.092879818
+    },
+    {
+      "duration": 27.174648526,
+      "value": "Solo",
+      "time": 24.885124716
+    },
+    {
+      "duration": 51.41267573700001,
+      "value": "Interlude",
+      "time": 52.059773242
+    },
+    {
+      "duration": 24.93167800499998,
+      "value": "Interlude",
+      "time": 103.472448979
+    },
+    {
+      "duration": 37.53802721100001,
+      "value": "Solo",
+      "time": 128.404126984
+    },
+    {
+      "duration": 24.109455781999998,
+      "value": "Solo",
+      "time": 165.942154195
+    },
+    {
+      "duration": 5.963015872999989,
+      "value": "Transition",
+      "time": 190.051609977
+    },
+    {
+      "duration": 24.035079365,
+      "value": "Verse",
+      "time": 196.01462585
+    },
+    {
+      "duration": 23.85467120200002,
+      "value": "Chorus",
+      "time": 220.049705215
+    },
+    {
+      "duration": 23.464058956999992,
+      "value": "Verse",
+      "time": 243.904376417
+    },
+    {
+      "duration": 26.410430839000014,
+      "value": "Chorus",
+      "time": 267.368435374
+    },
+    {
+      "duration": 11.311632653000004,
+      "value": "Interlude",
+      "time": 293.778866213
+    },
+    {
+      "duration": 55.692290248999996,
+      "value": "Solo",
+      "time": 305.090498866
+    },
+    {
+      "duration": 35.990975057000014,
+      "value": "Instrumental",
+      "time": 360.782789115
+    },
+    {
+      "duration": 16.562653060999992,
+      "value": "Interlude",
+      "time": 396.773764172
+    },
+    {
+      "duration": 109.46086167800001,
+      "value": "Solo",
+      "time": 413.336417233
+    },
+    {
+      "duration": 23.37623582799995,
+      "value": "Chorus",
+      "time": 522.797278911
+    },
+    {
+      "duration": 12.85510204100001,
+      "value": "Coda",
+      "time": 546.173514739
+    },
+    {
+      "duration": 33.260181405000026,
+      "value": "no-function",
+      "time": 559.02861678
+    },
+    {
+      "duration": 0.743038548999948,
+      "value": "Silence",
+      "time": 592.288798185
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 593.031836734
+    }
+  ]
+}

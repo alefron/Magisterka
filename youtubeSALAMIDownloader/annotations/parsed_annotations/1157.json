@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "duration": 2.229115646,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 11.03893424,
+      "value": "no-function",
+      "time": 2.229115646
+    },
+    {
+      "duration": 14.210975056999999,
+      "value": "Intro",
+      "time": 13.268049886
+    },
+    {
+      "duration": 9.314217687000003,
+      "value": "Instrumental",
+      "time": 27.479024943
+    },
+    {
+      "duration": 18.511473922999997,
+      "value": "Verse",
+      "time": 36.79324263
+    },
+    {
+      "duration": 18.615578231000008,
+      "value": "Pre-Chorus",
+      "time": 55.304716553
+    },
+    {
+      "duration": 18.744988661999997,
+      "value": "Chorus",
+      "time": 73.920294784
+    },
+    {
+      "duration": 9.355192743999993,
+      "value": "Instrumental",
+      "time": 92.665283446
+    },
+    {
+      "duration": 18.562380951999998,
+      "value": "Verse",
+      "time": 102.02047619
+    },
+    {
+      "duration": 18.681746032000007,
+      "value": "Pre-Chorus",
+      "time": 120.582857142
+    },
+    {
+      "duration": 18.783854875000003,
+      "value": "Chorus",
+      "time": 139.264603174
+    },
+    {
+      "duration": 35.933605443000005,
+      "value": "Solo",
+      "time": 158.048458049
+    },
+    {
+      "duration": 18.24301587299999,
+      "value": "Interlude",
+      "time": 193.982063492
+    },
+    {
+      "duration": 18.438208615999997,
+      "value": "Chorus",
+      "time": 212.225079365
+    },
+    {
+      "duration": 18.234625851000004,
+      "value": "Chorus",
+      "time": 230.663287981
+    },
+    {
+      "duration": 18.205736960999985,
+      "value": "Solo",
+      "time": 248.897913832
+    },
+    {
+      "duration": 23.88882086199999,
+      "value": "Coda",
+      "time": 267.103650793
+    },
+    {
+      "duration": 4.583038549000037,
+      "value": "Silence",
+      "time": 290.992471655
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 295.575510204
+    }
+  ]
+}

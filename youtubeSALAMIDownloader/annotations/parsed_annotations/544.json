@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "duration": 0.441179138,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 21.089523809000003,
+      "value": "Intro",
+      "time": 0.441179138
+    },
+    {
+      "duration": 17.208072563,
+      "value": "Pre-Verse",
+      "time": 21.530702947
+    },
+    {
+      "duration": 15.160907028999993,
+      "value": "Verse",
+      "time": 38.73877551
+    },
+    {
+      "duration": 15.28739229,
+      "value": "Verse",
+      "time": 53.899682539
+    },
+    {
+      "duration": 5.598072563000002,
+      "value": "Interlude",
+      "time": 69.187074829
+    },
+    {
+      "duration": 15.324058957000005,
+      "value": "Pre-Verse",
+      "time": 74.785147392
+    },
+    {
+      "duration": 15.211700679999993,
+      "value": "Verse",
+      "time": 90.109206349
+    },
+    {
+      "duration": 15.243605442000003,
+      "value": "no-function",
+      "time": 105.320907029
+    },
+    {
+      "duration": 9.440045351999999,
+      "value": "Interlude",
+      "time": 120.564512471
+    },
+    {
+      "duration": 15.109750566999992,
+      "value": "Pre-Chorus",
+      "time": 130.004557823
+    },
+    {
+      "duration": 14.993764171999999,
+      "value": "no-function",
+      "time": 145.11430839
+    },
+    {
+      "duration": 14.763129251999999,
+      "value": "Chorus",
+      "time": 160.108072562
+    },
+    {
+      "duration": 14.94739229000001,
+      "value": "Chorus",
+      "time": 174.871201814
+    },
+    {
+      "duration": 3.743673469000015,
+      "value": "Interlude",
+      "time": 189.818594104
+    },
+    {
+      "duration": 28.13569160999998,
+      "value": "Bridge",
+      "time": 193.562267573
+    },
+    {
+      "duration": 15.155351474000014,
+      "value": "Outro",
+      "time": 221.697959183
+    },
+    {
+      "duration": 19.862698412999976,
+      "value": "no-function",
+      "time": 236.853310657
+    },
+    {
+      "duration": 0.6334693880000373,
+      "value": "Silence",
+      "time": 256.71600907
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 257.349478458
+    }
+  ]
+}

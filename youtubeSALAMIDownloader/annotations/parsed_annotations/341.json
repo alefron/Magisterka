@@ -1,0 +1,79 @@
+{
+  "data": [
+    {
+      "duration": 0.010204081,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 0.0,
+      "value": "Main-Theme",
+      "time": 0.010204081
+    },
+    {
+      "duration": 6.216213152,
+      "value": "Theme",
+      "time": 0.010204081
+    },
+    {
+      "duration": 0.0,
+      "value": "Main-Theme",
+      "time": 6.226417233
+    },
+    {
+      "duration": 6.039977324,
+      "value": "Theme",
+      "time": 6.226417233
+    },
+    {
+      "duration": 0.0,
+      "value": "Main-Theme",
+      "time": 12.266394557
+    },
+    {
+      "duration": 6.0915646259999985,
+      "value": "Theme",
+      "time": 12.266394557
+    },
+    {
+      "duration": 0.0,
+      "value": "Main-Theme",
+      "time": 18.357959183
+    },
+    {
+      "duration": 6.056190476000001,
+      "value": "Theme",
+      "time": 18.357959183
+    },
+    {
+      "duration": 0.0,
+      "value": "Main-Theme",
+      "time": 24.414149659
+    },
+    {
+      "duration": 6.0213151929999995,
+      "value": "Theme",
+      "time": 24.414149659
+    },
+    {
+      "duration": 0.0,
+      "value": "Main-Theme",
+      "time": 30.435464852
+    },
+    {
+      "duration": 3.0011564629999974,
+      "value": "Theme",
+      "time": 30.435464852
+    },
+    {
+      "duration": 4.728979592000002,
+      "value": "Outro",
+      "time": 33.436621315
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 38.165600907
+    }
+  ]
+}

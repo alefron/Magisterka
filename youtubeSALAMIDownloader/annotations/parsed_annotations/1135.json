@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "duration": 0.040816326,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 2.8616780050000004,
+      "value": "no-function",
+      "time": 0.040816326
+    },
+    {
+      "duration": 7.9282312919999995,
+      "value": "Intro",
+      "time": 2.902494331
+    },
+    {
+      "duration": 22.447777778000003,
+      "value": "Verse",
+      "time": 10.830725623
+    },
+    {
+      "duration": 22.140861678,
+      "value": "Verse",
+      "time": 33.278503401
+    },
+    {
+      "duration": 15.189160997999991,
+      "value": "Pre-Chorus",
+      "time": 55.419365079
+    },
+    {
+      "duration": 22.596666666000004,
+      "value": "Chorus",
+      "time": 70.608526077
+    },
+    {
+      "duration": 22.197006803000008,
+      "value": "Solo",
+      "time": 93.205192743
+    },
+    {
+      "duration": 22.094036280999987,
+      "value": "Solo",
+      "time": 115.402199546
+    },
+    {
+      "duration": 15.092539683000012,
+      "value": "Pre-Chorus",
+      "time": 137.496235827
+    },
+    {
+      "duration": 22.609092970000006,
+      "value": "Chorus",
+      "time": 152.58877551
+    },
+    {
+      "duration": 21.80693877599998,
+      "value": "Solo",
+      "time": 175.19786848
+    },
+    {
+      "duration": 21.923378685000017,
+      "value": "Solo",
+      "time": 197.004807256
+    },
+    {
+      "duration": 14.99809523799999,
+      "value": "Pre-Chorus",
+      "time": 218.928185941
+    },
+    {
+      "duration": 22.575873016000003,
+      "value": "Chorus",
+      "time": 233.926281179
+    },
+    {
+      "duration": 28.86013605400001,
+      "value": "Chorus",
+      "time": 256.502154195
+    },
+    {
+      "duration": 18.076077096999995,
+      "value": "no-function",
+      "time": 285.362290249
+    },
+    {
+      "duration": 2.7689795919999938,
+      "value": "Silence",
+      "time": 303.438367346
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 306.207346938
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "duration": 0.221333333,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 35.246166667000004,
+      "value": "Intro",
+      "time": 0.221333333
+    },
+    {
+      "duration": 33.45,
+      "value": "no-function",
+      "time": 35.4675
+    },
+    {
+      "duration": 33.365958332999995,
+      "value": "no-function",
+      "time": 68.9175
+    },
+    {
+      "duration": 28.621541667000002,
+      "value": "Solo",
+      "time": 102.283458333
+    },
+    {
+      "duration": 28.42500000000001,
+      "value": "Instrumental",
+      "time": 130.905
+    },
+    {
+      "duration": 32.85749999999999,
+      "value": "Verse",
+      "time": 159.33
+    },
+    {
+      "duration": 32.928583333000006,
+      "value": "Verse",
+      "time": 192.1875
+    },
+    {
+      "duration": 33.031291667000005,
+      "value": "Verse",
+      "time": 225.116083333
+    },
+    {
+      "duration": 23.704020833000016,
+      "value": "Solo",
+      "time": 258.147375
+    },
+    {
+      "duration": 32.969604167,
+      "value": "Instrumental",
+      "time": 281.851395833
+    },
+    {
+      "duration": 23.486291666,
+      "value": "Verse",
+      "time": 314.821
+    },
+    {
+      "duration": 28.18724999999995,
+      "value": "Outro",
+      "time": 338.307291666
+    },
+    {
+      "duration": 22.58277083400003,
+      "value": "Fade-out",
+      "time": 366.494541666
+    },
+    {
+      "duration": 2.6146041659999923,
+      "value": "Silence",
+      "time": 389.0773125
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 391.691916666
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "duration": 0.053061224,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 11.324716553,
+      "value": "no-function",
+      "time": 0.053061224
+    },
+    {
+      "duration": 4.41585034,
+      "value": "Intro",
+      "time": 11.377777777
+    },
+    {
+      "duration": 17.397641724,
+      "value": "Solo",
+      "time": 15.793628117
+    },
+    {
+      "duration": 17.521111110999996,
+      "value": "Instrumental",
+      "time": 33.191269841
+    },
+    {
+      "duration": 17.47659863900001,
+      "value": "Pre-Chorus",
+      "time": 50.712380952
+    },
+    {
+      "duration": 17.680498866999997,
+      "value": "Chorus",
+      "time": 68.188979591
+    },
+    {
+      "duration": 17.555986394,
+      "value": "Verse",
+      "time": 85.869478458
+    },
+    {
+      "duration": 17.55988662099999,
+      "value": "Pre-Chorus",
+      "time": 103.425464852
+    },
+    {
+      "duration": 35.848480726000005,
+      "value": "Bridge",
+      "time": 120.985351473
+    },
+    {
+      "duration": 17.56190476200001,
+      "value": "Chorus",
+      "time": 156.833832199
+    },
+    {
+      "duration": 17.582380951999994,
+      "value": "Verse",
+      "time": 174.395736961
+    },
+    {
+      "duration": 17.295170068000004,
+      "value": "Pre-Chorus",
+      "time": 191.978117913
+    },
+    {
+      "duration": 35.534693877999985,
+      "value": "Bridge",
+      "time": 209.273287981
+    },
+    {
+      "duration": 17.446598639,
+      "value": "Chorus",
+      "time": 244.807981859
+    },
+    {
+      "duration": 22.957528345000014,
+      "value": "Chorus",
+      "time": 262.254580498
+    },
+    {
+      "duration": 21.094013604999986,
+      "value": "no-function",
+      "time": 285.212108843
+    },
+    {
+      "duration": 0.03183673500001305,
+      "value": "Silence",
+      "time": 306.306122448
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 306.337959183
+    }
+  ]
+}

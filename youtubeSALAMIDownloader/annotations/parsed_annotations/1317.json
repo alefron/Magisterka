@@ -1,0 +1,124 @@
+{
+  "data": [
+    {
+      "duration": 3.459773242,
+      "value": "silence",
+      "time": 0.0
+    },
+    {
+      "duration": 24.858412699,
+      "value": "Head",
+      "time": 3.459773242
+    },
+    {
+      "duration": 12.235374148999998,
+      "value": "Bridge",
+      "time": 28.318185941
+    },
+    {
+      "duration": 24.237800454000002,
+      "value": "Head",
+      "time": 40.55356009
+    },
+    {
+      "duration": 12.461972789,
+      "value": "Bridge",
+      "time": 64.791360544
+    },
+    {
+      "duration": 24.200317459999994,
+      "value": "Solo",
+      "time": 77.253333333
+    },
+    {
+      "duration": 12.075147392000005,
+      "value": "Solo",
+      "time": 101.453650793
+    },
+    {
+      "duration": 24.32328798200001,
+      "value": "Solo",
+      "time": 113.528798185
+    },
+    {
+      "duration": 12.159160997999976,
+      "value": "Solo",
+      "time": 137.852086167
+    },
+    {
+      "duration": 24.092539683000012,
+      "value": "Solo",
+      "time": 150.011247165
+    },
+    {
+      "duration": 12.11065759600001,
+      "value": "Solo",
+      "time": 174.103786848
+    },
+    {
+      "duration": 24.14870748299998,
+      "value": "Solo",
+      "time": 186.214444444
+    },
+    {
+      "duration": 12.189115646000005,
+      "value": "Solo",
+      "time": 210.363151927
+    },
+    {
+      "duration": 24.088412699000003,
+      "value": "Solo",
+      "time": 222.552267573
+    },
+    {
+      "duration": 12.074784580000028,
+      "value": "Solo",
+      "time": 246.640680272
+    },
+    {
+      "duration": 23.851065759999983,
+      "value": "Solo",
+      "time": 258.715464852
+    },
+    {
+      "duration": 11.837301587000013,
+      "value": "Solo",
+      "time": 282.566530612
+    },
+    {
+      "duration": 23.83192743799998,
+      "value": "Solo",
+      "time": 294.403832199
+    },
+    {
+      "duration": 12.130748299000004,
+      "value": "Solo",
+      "time": 318.235759637
+    },
+    {
+      "duration": 23.862539683000023,
+      "value": "Head",
+      "time": 330.366507936
+    },
+    {
+      "duration": 12.31113378599997,
+      "value": "Bridge",
+      "time": 354.229047619
+    },
+    {
+      "duration": 19.353696146000004,
+      "value": "Outro",
+      "time": 366.540181405
+    },
+    {
+      "duration": 62.027755102000015,
+      "value": "no-function",
+      "time": 385.893877551
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 447.921632653
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "data": [
+    {
+      "duration": 0.01632653,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 2.294058957,
+      "value": "no-function",
+      "time": 0.01632653
+    },
+    {
+      "duration": 44.547482993,
+      "value": "Chorus",
+      "time": 2.310385487
+    },
+    {
+      "duration": 4.420498866000003,
+      "value": "Silence",
+      "time": 46.85786848
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 51.278367346
+    }
+  ]
+}

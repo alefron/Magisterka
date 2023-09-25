@@ -1,0 +1,44 @@
+{
+  "data": [
+    {
+      "duration": 0.233650793,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 62.712063492,
+      "value": "Theme",
+      "time": 0.233650793
+    },
+    {
+      "duration": 35.975238095,
+      "value": "no-function",
+      "time": 62.945714285
+    },
+    {
+      "duration": 35.69376417299999,
+      "value": "no-function",
+      "time": 98.92095238
+    },
+    {
+      "duration": 44.933605442000015,
+      "value": "no-function",
+      "time": 134.614716553
+    },
+    {
+      "duration": 29.88755101999999,
+      "value": "Theme",
+      "time": 179.548321995
+    },
+    {
+      "duration": 32.902063491999996,
+      "value": "Outro",
+      "time": 209.435873015
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 242.337936507
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "duration": 0.05079365,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 3.501859411,
+      "value": "no-function",
+      "time": 0.05079365
+    },
+    {
+      "duration": 19.319002267,
+      "value": "Intro",
+      "time": 3.552653061
+    },
+    {
+      "duration": 36.92145124700001,
+      "value": "Verse",
+      "time": 22.871655328
+    },
+    {
+      "duration": 32.308934240999996,
+      "value": "Verse",
+      "time": 59.793106575
+    },
+    {
+      "duration": 18.449070295,
+      "value": "Transition",
+      "time": 92.102040816
+    },
+    {
+      "duration": 50.618594103999996,
+      "value": "Verse",
+      "time": 110.551111111
+    },
+    {
+      "duration": 18.244988661999997,
+      "value": "Transition",
+      "time": 161.169705215
+    },
+    {
+      "duration": 49.961451247000014,
+      "value": "Verse",
+      "time": 179.414693877
+    },
+    {
+      "duration": 13.597460318000003,
+      "value": "Transition",
+      "time": 229.376145124
+    },
+    {
+      "duration": 41.00863945499998,
+      "value": "Verse",
+      "time": 242.973605442
+    },
+    {
+      "duration": 36.632675737,
+      "value": "Interlude",
+      "time": 283.982244897
+    },
+    {
+      "duration": 55.40643991000002,
+      "value": "Chorus",
+      "time": 320.614920634
+    },
+    {
+      "duration": 55.292040816,
+      "value": "Chorus",
+      "time": 376.021360544
+    },
+    {
+      "duration": 55.998594104000006,
+      "value": "Chorus",
+      "time": 431.31340136
+    },
+    {
+      "duration": 11.543514739999978,
+      "value": "Coda",
+      "time": 487.311995464
+    },
+    {
+      "duration": 4.6039002260000075,
+      "value": "no-function",
+      "time": 498.855510204
+    },
+    {
+      "duration": 0.02467120200003592,
+      "value": "Silence",
+      "time": 503.45941043
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 503.484081632
+    }
+  ]
+}

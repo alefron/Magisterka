@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "duration": 0.420249433,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 10.766077097,
+      "value": "Intro",
+      "time": 0.420249433
+    },
+    {
+      "duration": 0.0,
+      "value": "Main-Theme",
+      "time": 11.18632653
+    },
+    {
+      "duration": 21.535759636999998,
+      "value": "Theme",
+      "time": 11.18632653
+    },
+    {
+      "duration": 0.0,
+      "value": "Main-Theme",
+      "time": 32.722086167
+    },
+    {
+      "duration": 20.479546485999997,
+      "value": "Theme",
+      "time": 32.722086167
+    },
+    {
+      "duration": 0.0,
+      "value": "Secondary-Theme",
+      "time": 53.201632653
+    },
+    {
+      "duration": 11.953560090000003,
+      "value": "Theme",
+      "time": 53.201632653
+    },
+    {
+      "duration": 0.0,
+      "value": "Secondary-Theme",
+      "time": 65.155192743
+    },
+    {
+      "duration": 17.925804989,
+      "value": "Theme",
+      "time": 65.155192743
+    },
+    {
+      "duration": 0.0,
+      "value": "Main-Theme",
+      "time": 83.080997732
+    },
+    {
+      "duration": 20.728571427999995,
+      "value": "Theme",
+      "time": 83.080997732
+    },
+    {
+      "duration": 0.0,
+      "value": "Main-Theme",
+      "time": 103.80956916
+    },
+    {
+      "duration": 18.745351474000003,
+      "value": "Theme",
+      "time": 103.80956916
+    },
+    {
+      "duration": 0.0,
+      "value": "Outro",
+      "time": 122.554920634
+    },
+    {
+      "duration": 14.54283446800001,
+      "value": "Theme",
+      "time": 122.554920634
+    },
+    {
+      "duration": 5.67195011299998,
+      "value": "Outro",
+      "time": 137.097755102
+    },
+    {
+      "duration": 5.472290249000025,
+      "value": "Outro",
+      "time": 142.769705215
+    },
+    {
+      "duration": 1.815351473999982,
+      "value": "Silence",
+      "time": 148.241995464
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 150.057346938
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "duration": 0.047891156,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 11.863945578,
+      "value": "no-function",
+      "time": 0.047891156
+    },
+    {
+      "duration": 15.492721089000002,
+      "value": "Intro",
+      "time": 11.911836734
+    },
+    {
+      "duration": 14.935759637,
+      "value": "Verse",
+      "time": 27.404557823
+    },
+    {
+      "duration": 7.377596371999999,
+      "value": "Chorus",
+      "time": 42.34031746
+    },
+    {
+      "duration": 7.3941496599999965,
+      "value": "Interlude",
+      "time": 49.717913832
+    },
+    {
+      "duration": 15.009977323999998,
+      "value": "Verse",
+      "time": 57.112063492
+    },
+    {
+      "duration": 7.446598639000001,
+      "value": "Chorus",
+      "time": 72.122040816
+    },
+    {
+      "duration": 7.432448980000004,
+      "value": "Interlude",
+      "time": 79.568639455
+    },
+    {
+      "duration": 13.866394557999996,
+      "value": "Bridge",
+      "time": 87.001088435
+    },
+    {
+      "duration": 31.079297052,
+      "value": "Instrumental",
+      "time": 100.867482993
+    },
+    {
+      "duration": 14.664013605000008,
+      "value": "Verse",
+      "time": 131.946780045
+    },
+    {
+      "duration": 14.846054422000009,
+      "value": "Solo",
+      "time": 146.61079365
+    },
+    {
+      "duration": 14.941360543999991,
+      "value": "Verse",
+      "time": 161.456848072
+    },
+    {
+      "duration": 7.4501814059999845,
+      "value": "Chorus",
+      "time": 176.398208616
+    },
+    {
+      "duration": 7.336326530999997,
+      "value": "Interlude",
+      "time": 183.848390022
+    },
+    {
+      "duration": 7.06725623600002,
+      "value": "Coda",
+      "time": 191.184716553
+    },
+    {
+      "duration": 16.86494331,
+      "value": "no-function",
+      "time": 198.251972789
+    },
+    {
+      "duration": 0.027573695999990377,
+      "value": "Silence",
+      "time": 215.116916099
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 215.144489795
+    }
+  ]
+}

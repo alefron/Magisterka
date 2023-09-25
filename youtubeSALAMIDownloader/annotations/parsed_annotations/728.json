@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "duration": 0.391836734,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 2.537619048,
+      "value": "Intro",
+      "time": 0.391836734
+    },
+    {
+      "duration": 19.906780044999998,
+      "value": "Intro",
+      "time": 2.929455782
+    },
+    {
+      "duration": 20.039183674000004,
+      "value": "Verse",
+      "time": 22.836235827
+    },
+    {
+      "duration": 19.977392289999997,
+      "value": "Chorus",
+      "time": 42.875419501
+    },
+    {
+      "duration": 30.011224489999996,
+      "value": "Verse",
+      "time": 62.852811791
+    },
+    {
+      "duration": 20.078276644,
+      "value": "Interlude",
+      "time": 92.864036281
+    },
+    {
+      "duration": 30.003968254000014,
+      "value": "Verse",
+      "time": 112.942312925
+    },
+    {
+      "duration": 9.984399092999979,
+      "value": "Interlude",
+      "time": 142.946281179
+    },
+    {
+      "duration": 40.04324263000001,
+      "value": "Verse",
+      "time": 152.930680272
+    },
+    {
+      "duration": 19.985873016,
+      "value": "Bridge",
+      "time": 192.973922902
+    },
+    {
+      "duration": 10.014807256000012,
+      "value": "Interlude",
+      "time": 212.959795918
+    },
+    {
+      "duration": 40.00043083900002,
+      "value": "Verse",
+      "time": 222.974603174
+    },
+    {
+      "duration": 29.98106575999998,
+      "value": "Interlude",
+      "time": 262.975034013
+    },
+    {
+      "duration": 9.96777777799997,
+      "value": "Verse",
+      "time": 292.956099773
+    },
+    {
+      "duration": 20.044580498000016,
+      "value": "Interlude",
+      "time": 302.923877551
+    },
+    {
+      "duration": 10.001292517000024,
+      "value": "Outro",
+      "time": 322.968458049
+    },
+    {
+      "duration": 15.693854875999989,
+      "value": "Fade-out",
+      "time": 332.969750566
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 348.663605442
+    }
+  ]
+}

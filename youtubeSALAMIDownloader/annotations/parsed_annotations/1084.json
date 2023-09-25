@@ -1,0 +1,119 @@
+{
+  "data": [
+    {
+      "duration": 0.04063492,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 1.747301587,
+      "value": "Intro",
+      "time": 0.04063492
+    },
+    {
+      "duration": 9.798820862000001,
+      "value": "Chorus",
+      "time": 1.787936507
+    },
+    {
+      "duration": 58.57108843500001,
+      "value": "Solo",
+      "time": 11.586757369
+    },
+    {
+      "duration": 39.17333333399999,
+      "value": "Verse",
+      "time": 70.157845804
+    },
+    {
+      "duration": 3.192721087999999,
+      "value": "no-function",
+      "time": 109.331179138
+    },
+    {
+      "duration": 46.21897959200001,
+      "value": "Intro",
+      "time": 112.523900226
+    },
+    {
+      "duration": 17.939047619000007,
+      "value": "Instrumental",
+      "time": 158.742879818
+    },
+    {
+      "duration": 17.978072562999984,
+      "value": "Verse",
+      "time": 176.681927437
+    },
+    {
+      "duration": 18.018548752000015,
+      "value": "Pre-Chorus",
+      "time": 194.66
+    },
+    {
+      "duration": 18.20496598699998,
+      "value": "Chorus",
+      "time": 212.678548752
+    },
+    {
+      "duration": 18.193741496,
+      "value": "Verse",
+      "time": 230.883514739
+    },
+    {
+      "duration": 18.10399093000001,
+      "value": "Pre-Chorus",
+      "time": 249.077256235
+    },
+    {
+      "duration": 18.28265306100002,
+      "value": "Chorus",
+      "time": 267.181247165
+    },
+    {
+      "duration": 18.065056690000006,
+      "value": "Solo",
+      "time": 285.463900226
+    },
+    {
+      "duration": 18.282653060999962,
+      "value": "Verse",
+      "time": 303.528956916
+    },
+    {
+      "duration": 18.495102040999996,
+      "value": "Pre-Chorus",
+      "time": 321.811609977
+    },
+    {
+      "duration": 18.339501133,
+      "value": "Chorus",
+      "time": 340.306712018
+    },
+    {
+      "duration": 18.412970522000023,
+      "value": "Chorus",
+      "time": 358.646213151
+    },
+    {
+      "duration": 67.41562358300001,
+      "value": "Instrumental",
+      "time": 377.059183673
+    },
+    {
+      "duration": 25.93825396799997,
+      "value": "Coda",
+      "time": 444.474807256
+    },
+    {
+      "duration": 0.026122449000013148,
+      "value": "Silence",
+      "time": 470.413061224
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 470.439183673
+    }
+  ]
+}

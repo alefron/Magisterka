@@ -1,0 +1,124 @@
+{
+  "data": [
+    {
+      "duration": 1.035714285,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 11.553356009000002,
+      "value": "Intro",
+      "time": 1.035714285
+    },
+    {
+      "duration": 11.480770975,
+      "value": "no-function",
+      "time": 12.589070294
+    },
+    {
+      "duration": 11.334988662,
+      "value": "Verse",
+      "time": 24.069841269
+    },
+    {
+      "duration": 17.234104308999996,
+      "value": "Bridge",
+      "time": 35.404829931
+    },
+    {
+      "duration": 11.372335601000003,
+      "value": "Chorus",
+      "time": 52.63893424
+    },
+    {
+      "duration": 11.498820860999999,
+      "value": "Verse",
+      "time": 64.011269841
+    },
+    {
+      "duration": 11.350793651000004,
+      "value": "Verse",
+      "time": 75.510090702
+    },
+    {
+      "duration": 22.952063491999994,
+      "value": "Bridge",
+      "time": 86.860884353
+    },
+    {
+      "duration": 11.440997733000003,
+      "value": "Verse",
+      "time": 109.812947845
+    },
+    {
+      "duration": 11.391111111,
+      "value": "Verse",
+      "time": 121.253945578
+    },
+    {
+      "duration": 11.409705215000002,
+      "value": "Bridge",
+      "time": 132.645056689
+    },
+    {
+      "duration": 11.472040816999993,
+      "value": "Chorus",
+      "time": 144.054761904
+    },
+    {
+      "duration": 11.358117913000001,
+      "value": "Chorus",
+      "time": 155.526802721
+    },
+    {
+      "duration": 11.441541951000005,
+      "value": "Chorus",
+      "time": 166.884920634
+    },
+    {
+      "duration": 11.454671200999996,
+      "value": "Chorus",
+      "time": 178.326462585
+    },
+    {
+      "duration": 11.417460317999996,
+      "value": "Chorus",
+      "time": 189.781133786
+    },
+    {
+      "duration": 11.454376416999992,
+      "value": "Chorus",
+      "time": 201.198594104
+    },
+    {
+      "duration": 11.399795918000024,
+      "value": "Chorus",
+      "time": 212.652970521
+    },
+    {
+      "duration": 11.47301587299998,
+      "value": "Verse",
+      "time": 224.052766439
+    },
+    {
+      "duration": 11.415147393000012,
+      "value": "Verse",
+      "time": 235.525782312
+    },
+    {
+      "duration": 8.768412697999992,
+      "value": "Outro",
+      "time": 246.940929705
+    },
+    {
+      "duration": 1.2664172340000164,
+      "value": "Silence",
+      "time": 255.709342403
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 256.975759637
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "duration": 0.438820861,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 39.476281179,
+      "value": "Intro",
+      "time": 0.438820861
+    },
+    {
+      "duration": 42.381088436000006,
+      "value": "no-function",
+      "time": 39.91510204
+    },
+    {
+      "duration": 7.066825396999988,
+      "value": "no-function",
+      "time": 82.296190476
+    },
+    {
+      "duration": 41.16512471600001,
+      "value": "Main-Theme",
+      "time": 89.363015873
+    },
+    {
+      "duration": 41.43204081599998,
+      "value": "Main-Theme",
+      "time": 130.528140589
+    },
+    {
+      "duration": 41.779501134000014,
+      "value": "Main-Theme",
+      "time": 171.960181405
+    },
+    {
+      "duration": 27.59827664400001,
+      "value": "Secondary-Theme",
+      "time": 213.739682539
+    },
+    {
+      "duration": 41.42596371899998,
+      "value": "Main-Theme",
+      "time": 241.337959183
+    },
+    {
+      "duration": 41.79927437600003,
+      "value": "Secondary-Theme",
+      "time": 282.763922902
+    },
+    {
+      "duration": 27.981088435999993,
+      "value": "Secondary-Theme",
+      "time": 324.563197278
+    },
+    {
+      "duration": 6.9206122449999725,
+      "value": "no-function",
+      "time": 352.544285714
+    },
+    {
+      "duration": 13.869773242000008,
+      "value": "Main-Theme",
+      "time": 359.464897959
+    },
+    {
+      "duration": 27.57857142900002,
+      "value": "Solo",
+      "time": 373.334671201
+    },
+    {
+      "duration": 45.27426303799996,
+      "value": "Outro",
+      "time": 400.91324263
+    },
+    {
+      "duration": 1.4100907030000371,
+      "value": "Silence",
+      "time": 446.187505668
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 447.597596371
+    }
+  ]
+}

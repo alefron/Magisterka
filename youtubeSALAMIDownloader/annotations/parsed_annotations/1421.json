@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "duration": 0.046439909,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 1.137777778,
+      "value": "no-function",
+      "time": 0.046439909
+    },
+    {
+      "duration": 5.465714285,
+      "value": "Intro",
+      "time": 1.184217687
+    },
+    {
+      "duration": 31.097845805000002,
+      "value": "Verse",
+      "time": 6.649931972
+    },
+    {
+      "duration": 31.388299319999994,
+      "value": "Verse",
+      "time": 37.747777777
+    },
+    {
+      "duration": 32.962789115999996,
+      "value": "Solo",
+      "time": 69.136077097
+    },
+    {
+      "duration": 32.81362811800001,
+      "value": "Solo",
+      "time": 102.098866213
+    },
+    {
+      "duration": 33.28546485199999,
+      "value": "Solo",
+      "time": 134.912494331
+    },
+    {
+      "duration": 33.127641724,
+      "value": "Solo",
+      "time": 168.197959183
+    },
+    {
+      "duration": 33.16498866200001,
+      "value": "Solo",
+      "time": 201.325600907
+    },
+    {
+      "duration": 32.75594104300001,
+      "value": "Solo",
+      "time": 234.490589569
+    },
+    {
+      "duration": 33.176281179,
+      "value": "Solo",
+      "time": 267.246530612
+    },
+    {
+      "duration": 33.315782313,
+      "value": "Solo",
+      "time": 300.422811791
+    },
+    {
+      "duration": 32.87505668899996,
+      "value": "Solo",
+      "time": 333.738594104
+    },
+    {
+      "duration": 33.301043084000014,
+      "value": "Solo",
+      "time": 366.613650793
+    },
+    {
+      "duration": 33.66056689300001,
+      "value": "Solo",
+      "time": 399.914693877
+    },
+    {
+      "duration": 54.18972789200001,
+      "value": "Verse",
+      "time": 433.57526077
+    },
+    {
+      "duration": 136.57315192699997,
+      "value": "no-function",
+      "time": 487.764988662
+    },
+    {
+      "duration": 0.040634920999991664,
+      "value": "Silence",
+      "time": 624.338140589
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 624.37877551
+    }
+  ]
+}

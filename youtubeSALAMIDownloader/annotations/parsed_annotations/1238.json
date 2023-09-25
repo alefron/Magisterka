@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "duration": 0.048,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 2.32,
+      "value": "no-function",
+      "time": 0.048
+    },
+    {
+      "duration": 6.392916666,
+      "value": "Solo",
+      "time": 2.368
+    },
+    {
+      "duration": 4.166874999999999,
+      "value": "banjo",
+      "time": 8.760916666
+    },
+    {
+      "duration": 16.867520834000004,
+      "value": "Verse",
+      "time": 12.927791666
+    },
+    {
+      "duration": 16.7785,
+      "value": "Verse",
+      "time": 29.7953125
+    },
+    {
+      "duration": 17.040270833,
+      "value": "Chorus",
+      "time": 46.5738125
+    },
+    {
+      "duration": 4.13956249999999,
+      "value": "Transition",
+      "time": 63.614083333
+    },
+    {
+      "duration": 16.732895833,
+      "value": "Verse",
+      "time": 67.753645833
+    },
+    {
+      "duration": 17.060958334000006,
+      "value": "Chorus",
+      "time": 84.486541666
+    },
+    {
+      "duration": 16.695895832999994,
+      "value": "Solo",
+      "time": 101.5475
+    },
+    {
+      "duration": 16.267875000000004,
+      "value": "Solo",
+      "time": 118.243395833
+    },
+    {
+      "duration": 17.369062500000013,
+      "value": "Verse",
+      "time": 134.511270833
+    },
+    {
+      "duration": 23.610333333,
+      "value": "Chorus",
+      "time": 151.880333333
+    },
+    {
+      "duration": 0.0213333339999906,
+      "value": "Silence",
+      "time": 175.490666666
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 175.512
+    }
+  ]
+}

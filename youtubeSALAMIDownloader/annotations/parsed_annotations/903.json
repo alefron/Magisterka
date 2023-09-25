@@ -1,0 +1,114 @@
+{
+  "data": [
+    {
+      "duration": 0.024489795,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 13.373424037000001,
+      "value": "Intro",
+      "time": 0.024489795
+    },
+    {
+      "duration": 11.541814059,
+      "value": "Instrumental",
+      "time": 13.397913832
+    },
+    {
+      "duration": 17.599229024999996,
+      "value": "Pre-Verse",
+      "time": 24.939727891
+    },
+    {
+      "duration": 11.720090703000004,
+      "value": "Interlude",
+      "time": 42.538956916
+    },
+    {
+      "duration": 11.631655327999994,
+      "value": "Interlude",
+      "time": 54.259047619
+    },
+    {
+      "duration": 25.035804989,
+      "value": "Verse",
+      "time": 65.890702947
+    },
+    {
+      "duration": 11.662244898000012,
+      "value": "Interlude",
+      "time": 90.926507936
+    },
+    {
+      "duration": 25.114036280999997,
+      "value": "Verse",
+      "time": 102.588752834
+    },
+    {
+      "duration": 11.737959184000005,
+      "value": "Interlude",
+      "time": 127.702789115
+    },
+    {
+      "duration": 14.667346938999998,
+      "value": "Chorus",
+      "time": 139.440748299
+    },
+    {
+      "duration": 17.806870747999994,
+      "value": "Chorus",
+      "time": 154.108095238
+    },
+    {
+      "duration": 11.772108843000012,
+      "value": "Interlude",
+      "time": 171.914965986
+    },
+    {
+      "duration": 11.831269841999983,
+      "value": "Interlude",
+      "time": 183.687074829
+    },
+    {
+      "duration": 11.661859410000005,
+      "value": "Instrumental",
+      "time": 195.518344671
+    },
+    {
+      "duration": 20.464784581000004,
+      "value": "Pre-Verse",
+      "time": 207.180204081
+    },
+    {
+      "duration": 14.651700680000005,
+      "value": "Chorus",
+      "time": 227.644988662
+    },
+    {
+      "duration": 14.541133787000007,
+      "value": "Chorus",
+      "time": 242.296689342
+    },
+    {
+      "duration": 11.759999999999991,
+      "value": "Instrumental",
+      "time": 256.837823129
+    },
+    {
+      "duration": 11.694308390000003,
+      "value": "Instrumental",
+      "time": 268.597823129
+    },
+    {
+      "duration": 23.120113377999985,
+      "value": "Fade-out",
+      "time": 280.292131519
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 303.412244897
+    }
+  ]
+}

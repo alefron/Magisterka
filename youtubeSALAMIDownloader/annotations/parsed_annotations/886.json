@@ -1,0 +1,29 @@
+{
+  "data": [
+    {
+      "duration": 0.032653061,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 330.742857143,
+      "value": "piece-1",
+      "time": 0.032653061
+    },
+    {
+      "duration": 259.02580498799995,
+      "value": "piece-2",
+      "time": 330.775510204
+    },
+    {
+      "duration": 0.0040136060000577345,
+      "value": "Silence",
+      "time": 589.801315192
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 589.805328798
+    }
+  ]
+}

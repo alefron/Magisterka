@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "duration": 0.058049886,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 9.441950114,
+      "value": "Intro",
+      "time": 0.058049886
+    },
+    {
+      "duration": 9.411247164999999,
+      "value": "Head",
+      "time": 9.5
+    },
+    {
+      "duration": 9.360884354,
+      "value": "Head",
+      "time": 18.911247165
+    },
+    {
+      "duration": 9.542585033999998,
+      "value": "Head",
+      "time": 28.272131519
+    },
+    {
+      "duration": 9.381337868000003,
+      "value": "Head",
+      "time": 37.814716553
+    },
+    {
+      "duration": 9.439931973,
+      "value": "Solo",
+      "time": 47.196054421
+    },
+    {
+      "duration": 9.393287982000004,
+      "value": "Solo",
+      "time": 56.635986394
+    },
+    {
+      "duration": 9.383764172,
+      "value": "Solo",
+      "time": 66.029274376
+    },
+    {
+      "duration": 9.512721088999996,
+      "value": "Solo",
+      "time": 75.413038548
+    },
+    {
+      "duration": 9.370884353000008,
+      "value": "Solo",
+      "time": 84.925759637
+    },
+    {
+      "duration": 9.413560090999994,
+      "value": "Solo",
+      "time": 94.29664399
+    },
+    {
+      "duration": 9.406802721000005,
+      "value": "Solo",
+      "time": 103.710204081
+    },
+    {
+      "duration": 9.358934241,
+      "value": "Solo",
+      "time": 113.117006802
+    },
+    {
+      "duration": 9.271995463999986,
+      "value": "Head",
+      "time": 122.475941043
+    },
+    {
+      "duration": 9.416054422000002,
+      "value": "Head",
+      "time": 131.747936507
+    },
+    {
+      "duration": 9.467301587999998,
+      "value": "Head",
+      "time": 141.163990929
+    },
+    {
+      "duration": 10.173492062999998,
+      "value": "Head",
+      "time": 150.631292517
+    },
+    {
+      "duration": 5.508866213000005,
+      "value": "Silence",
+      "time": 160.80478458
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 166.313650793
+    }
+  ]
+}

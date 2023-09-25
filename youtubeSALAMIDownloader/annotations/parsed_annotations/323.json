@@ -1,0 +1,124 @@
+{
+  "data": [
+    {
+      "duration": 0.258321995,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 1.8604988660000001,
+      "value": "no-function",
+      "time": 0.258321995
+    },
+    {
+      "duration": 7.996371882,
+      "value": "Intro",
+      "time": 2.118820861
+    },
+    {
+      "duration": 8.005079365000002,
+      "value": "Chorus",
+      "time": 10.115192743
+    },
+    {
+      "duration": 32.000136055,
+      "value": "Verse",
+      "time": 18.120272108
+    },
+    {
+      "duration": 16.002040815999997,
+      "value": "Chorus",
+      "time": 50.120408163
+    },
+    {
+      "duration": 8.002040816000004,
+      "value": "Verse",
+      "time": 66.122448979
+    },
+    {
+      "duration": 7.993877550999997,
+      "value": "Chorus",
+      "time": 74.124489795
+    },
+    {
+      "duration": 24.004081633,
+      "value": "Verse",
+      "time": 82.118367346
+    },
+    {
+      "duration": 16.002040816000004,
+      "value": "Chorus",
+      "time": 106.122448979
+    },
+    {
+      "duration": 11.990272109000003,
+      "value": "Verse",
+      "time": 122.124489795
+    },
+    {
+      "duration": 8.003605442000008,
+      "value": "Chorus",
+      "time": 134.114761904
+    },
+    {
+      "duration": 16.002040816999994,
+      "value": "break",
+      "time": 142.118367346
+    },
+    {
+      "duration": 15.997959183000006,
+      "value": "Chorus",
+      "time": 158.120408163
+    },
+    {
+      "duration": 8.004081632999998,
+      "value": "Chorus",
+      "time": 174.118367346
+    },
+    {
+      "duration": 15.989795917999999,
+      "value": "Verse",
+      "time": 182.122448979
+    },
+    {
+      "duration": 16.004081633,
+      "value": "Chorus",
+      "time": 198.112244897
+    },
+    {
+      "duration": 7.993061224999991,
+      "value": "Verse",
+      "time": 214.11632653
+    },
+    {
+      "duration": 24.004897959000004,
+      "value": "Chorus",
+      "time": 222.109387755
+    },
+    {
+      "duration": 15.997959182999978,
+      "value": "Chorus",
+      "time": 246.114285714
+    },
+    {
+      "duration": 8.0,
+      "value": "Chorus",
+      "time": 262.112244897
+    },
+    {
+      "duration": 2.5760997739999993,
+      "value": "Outro",
+      "time": 270.112244897
+    },
+    {
+      "duration": 2.765351473999999,
+      "value": "Silence",
+      "time": 272.688344671
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 275.453696145
+    }
+  ]
+}

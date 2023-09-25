@@ -1,0 +1,109 @@
+{
+  "data": [
+    {
+      "duration": 0.046439909,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 16.436666666,
+      "value": "Intro",
+      "time": 0.046439909
+    },
+    {
+      "duration": 13.407596372,
+      "value": "Intro",
+      "time": 16.483106575
+    },
+    {
+      "duration": 28.824580499,
+      "value": "Verse",
+      "time": 29.890702947
+    },
+    {
+      "duration": 25.879863946,
+      "value": "Chorus",
+      "time": 58.715283446
+    },
+    {
+      "duration": 13.151836734,
+      "value": "Head",
+      "time": 84.595147392
+    },
+    {
+      "duration": 13.736122448999993,
+      "value": "Head",
+      "time": 97.746984126
+    },
+    {
+      "duration": 29.237414966000017,
+      "value": "Verse",
+      "time": 111.483106575
+    },
+    {
+      "duration": 26.303582766999995,
+      "value": "Chorus",
+      "time": 140.720521541
+    },
+    {
+      "duration": 26.72809523800001,
+      "value": "Head",
+      "time": 167.024104308
+    },
+    {
+      "duration": 13.516984126999972,
+      "value": "Interlude",
+      "time": 193.752199546
+    },
+    {
+      "duration": 0.0,
+      "value": "Instrumental",
+      "time": 207.269183673
+    },
+    {
+      "duration": 13.650816327000001,
+      "value": "Solo",
+      "time": 207.269183673
+    },
+    {
+      "duration": 39.84823129200001,
+      "value": "Solo",
+      "time": 220.92
+    },
+    {
+      "duration": 13.752176871000017,
+      "value": "Interlude",
+      "time": 260.768231292
+    },
+    {
+      "duration": 71.12494330999999,
+      "value": "Solo",
+      "time": 274.520408163
+    },
+    {
+      "duration": 39.747596371999975,
+      "value": "Solo",
+      "time": 345.645351473
+    },
+    {
+      "duration": 20.660340136000002,
+      "value": "Chorus",
+      "time": 385.392947845
+    },
+    {
+      "duration": 13.248752835000005,
+      "value": "Outro",
+      "time": 406.053287981
+    },
+    {
+      "duration": 0.044603174000030776,
+      "value": "Silence",
+      "time": 419.302040816
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 419.34664399
+    }
+  ]
+}

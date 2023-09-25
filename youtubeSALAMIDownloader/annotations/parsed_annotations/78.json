@@ -1,0 +1,39 @@
+{
+  "data": [
+    {
+      "duration": 0.696598639,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 212.11222222199999,
+      "value": "Exposition",
+      "time": 0.696598639
+    },
+    {
+      "duration": 61.45290249500002,
+      "value": "Development",
+      "time": 212.808820861
+    },
+    {
+      "duration": 127.765646258,
+      "value": "Recap",
+      "time": 274.261723356
+    },
+    {
+      "duration": 62.03793650799997,
+      "value": "Outro",
+      "time": 402.027369614
+    },
+    {
+      "duration": 4.080929705000017,
+      "value": "Silence",
+      "time": 464.065306122
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 468.146235827
+    }
+  ]
+}

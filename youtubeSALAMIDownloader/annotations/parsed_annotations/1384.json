@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "duration": 0.04063492,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 0.19156462600000002,
+      "value": "no-function",
+      "time": 0.04063492
+    },
+    {
+      "duration": 19.017505669,
+      "value": "Intro",
+      "time": 0.232199546
+    },
+    {
+      "duration": 19.519251701,
+      "value": "Solo",
+      "time": 19.249705215
+    },
+    {
+      "duration": 20.268185941,
+      "value": "Verse",
+      "time": 38.768956916
+    },
+    {
+      "duration": 10.017551020000006,
+      "value": "Instrumental",
+      "time": 59.037142857
+    },
+    {
+      "duration": 20.222131519,
+      "value": "Interlude",
+      "time": 69.054693877
+    },
+    {
+      "duration": 19.935124716999994,
+      "value": "Verse",
+      "time": 89.276825396
+    },
+    {
+      "duration": 17.278934239999998,
+      "value": "Chorus",
+      "time": 109.211950113
+    },
+    {
+      "duration": 18.937868480999995,
+      "value": "Instrumental",
+      "time": 126.490884353
+    },
+    {
+      "duration": 18.374739229,
+      "value": "Verse",
+      "time": 145.428752834
+    },
+    {
+      "duration": 19.661791383000008,
+      "value": "Chorus",
+      "time": 163.803492063
+    },
+    {
+      "duration": 19.75036281199999,
+      "value": "Interlude",
+      "time": 183.465283446
+    },
+    {
+      "duration": 19.643015872999996,
+      "value": "Verse",
+      "time": 203.215646258
+    },
+    {
+      "duration": 18.804580499000025,
+      "value": "Chorus",
+      "time": 222.858662131
+    },
+    {
+      "duration": 34.004058956999984,
+      "value": "Instrumental",
+      "time": 241.66324263
+    },
+    {
+      "duration": 32.98392290200002,
+      "value": "Chorus",
+      "time": 275.667301587
+    },
+    {
+      "duration": 47.351315193000005,
+      "value": "no-function",
+      "time": 308.651224489
+    },
+    {
+      "duration": 0.046439908999957424,
+      "value": "Silence",
+      "time": 356.002539682
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 356.048979591
+    }
+  ]
+}

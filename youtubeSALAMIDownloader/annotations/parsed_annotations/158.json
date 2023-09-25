@@ -1,0 +1,49 @@
+{
+  "data": [
+    {
+      "duration": 1.160997732,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 49.721723356,
+      "value": "Main-Theme",
+      "time": 1.160997732
+    },
+    {
+      "duration": 44.26829932,
+      "value": "Transition",
+      "time": 50.882721088
+    },
+    {
+      "duration": 36.85442176800001,
+      "value": "Secondary-Theme",
+      "time": 95.151020408
+    },
+    {
+      "duration": 115.50476190500001,
+      "value": "Development",
+      "time": 132.005442176
+    },
+    {
+      "duration": 84.86226757400001,
+      "value": "Recap",
+      "time": 247.510204081
+    },
+    {
+      "duration": 100.64165532899995,
+      "value": "Coda",
+      "time": 332.372471655
+    },
+    {
+      "duration": 3.155895691000012,
+      "value": "Silence",
+      "time": 433.014126984
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 436.170022675
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "data": [
+    {
+      "duration": 0.531882086,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 0.0,
+      "value": "Head",
+      "time": 0.531882086
+    },
+    {
+      "duration": 22.626734694,
+      "value": "Verse",
+      "time": 0.531882086
+    },
+    {
+      "duration": 0.0,
+      "value": "Head",
+      "time": 23.15861678
+    },
+    {
+      "duration": 23.182426303000003,
+      "value": "Verse",
+      "time": 23.15861678
+    },
+    {
+      "duration": 0.0,
+      "value": "Bridge",
+      "time": 46.341043083
+    },
+    {
+      "duration": 22.678049887,
+      "value": "Head",
+      "time": 46.341043083
+    },
+    {
+      "duration": 0.0,
+      "value": "Head",
+      "time": 69.01909297
+    },
+    {
+      "duration": 23.256984126999996,
+      "value": "Verse",
+      "time": 69.01909297
+    },
+    {
+      "duration": 23.167392289999995,
+      "value": "Solo",
+      "time": 92.276077097
+    },
+    {
+      "duration": 23.074104309000006,
+      "value": "Solo",
+      "time": 115.443469387
+    },
+    {
+      "duration": 0.0,
+      "value": "Bridge",
+      "time": 138.517573696
+    },
+    {
+      "duration": 23.377301587000005,
+      "value": "Solo",
+      "time": 138.517573696
+    },
+    {
+      "duration": 23.12462585,
+      "value": "Solo",
+      "time": 161.894875283
+    },
+    {
+      "duration": 22.431587301999997,
+      "value": "Solo",
+      "time": 185.019501133
+    },
+    {
+      "duration": 0.0,
+      "value": "Bridge",
+      "time": 207.451088435
+    },
+    {
+      "duration": 23.184875282999997,
+      "value": "Head",
+      "time": 207.451088435
+    },
+    {
+      "duration": 0.0,
+      "value": "Head",
+      "time": 230.635963718
+    },
+    {
+      "duration": 39.671020407999976,
+      "value": "Verse",
+      "time": 230.635963718
+    },
+    {
+      "duration": 5.162562359000049,
+      "value": "Silence",
+      "time": 270.306984126
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 275.469546485
+    }
+  ]
+}

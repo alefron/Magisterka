@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "duration": 0.15510204,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 24.146938776000002,
+      "value": "Intro",
+      "time": 0.15510204
+    },
+    {
+      "duration": 13.844897959,
+      "value": "no-function",
+      "time": 24.302040816
+    },
+    {
+      "duration": 13.804081632999996,
+      "value": "Verse",
+      "time": 38.146938775
+    },
+    {
+      "duration": 13.864126984000002,
+      "value": "Verse",
+      "time": 51.951020408
+    },
+    {
+      "duration": 20.727709750000002,
+      "value": "Chorus",
+      "time": 65.815147392
+    },
+    {
+      "duration": 13.820408164,
+      "value": "Verse",
+      "time": 86.542857142
+    },
+    {
+      "duration": 13.836734694,
+      "value": "Verse",
+      "time": 100.363265306
+    },
+    {
+      "duration": 13.824489794999991,
+      "value": "Chorus",
+      "time": 114.2
+    },
+    {
+      "duration": 13.820408164000014,
+      "value": "no-function",
+      "time": 128.024489795
+    },
+    {
+      "duration": 27.67755101999998,
+      "value": "break",
+      "time": 141.844897959
+    },
+    {
+      "duration": 13.812244898000017,
+      "value": "Solo",
+      "time": 169.522448979
+    },
+    {
+      "duration": 13.848979592000006,
+      "value": "no-function",
+      "time": 183.334693877
+    },
+    {
+      "duration": 13.852335600999993,
+      "value": "Chorus",
+      "time": 197.183673469
+    },
+    {
+      "duration": 13.812970520999983,
+      "value": "no-function",
+      "time": 211.03600907
+    },
+    {
+      "duration": 13.854013606000024,
+      "value": "no-function",
+      "time": 224.848979591
+    },
+    {
+      "duration": 6.912448978999976,
+      "value": "no-function",
+      "time": 238.702993197
+    },
+    {
+      "duration": 12.21068027199999,
+      "value": "Fade-out",
+      "time": 245.615442176
+    },
+    {
+      "duration": 0.6897052160000499,
+      "value": "Silence",
+      "time": 257.826122448
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 258.515827664
+    }
+  ]
+}

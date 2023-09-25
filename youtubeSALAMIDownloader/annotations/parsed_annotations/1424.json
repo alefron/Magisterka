@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "duration": 0.046439909,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 0.23219954599999998,
+      "value": "no-function",
+      "time": 0.046439909
+    },
+    {
+      "duration": 14.735328798,
+      "value": "Instrumental",
+      "time": 0.278639455
+    },
+    {
+      "duration": 26.47659864,
+      "value": "Verse",
+      "time": 15.013968253
+    },
+    {
+      "duration": 11.716734694000003,
+      "value": "Chorus",
+      "time": 41.490566893
+    },
+    {
+      "duration": 14.621609976999991,
+      "value": "Solo",
+      "time": 53.207301587
+    },
+    {
+      "duration": 26.349523810000008,
+      "value": "Verse",
+      "time": 67.828911564
+    },
+    {
+      "duration": 11.807573695999992,
+      "value": "Chorus",
+      "time": 94.178435374
+    },
+    {
+      "duration": 14.656825397000006,
+      "value": "Solo",
+      "time": 105.98600907
+    },
+    {
+      "duration": 26.370975055999992,
+      "value": "Verse",
+      "time": 120.642834467
+    },
+    {
+      "duration": 11.761496598999997,
+      "value": "Chorus",
+      "time": 147.013809523
+    },
+    {
+      "duration": 11.680000000000007,
+      "value": "Chorus",
+      "time": 158.775306122
+    },
+    {
+      "duration": 11.696167800000012,
+      "value": "Chorus",
+      "time": 170.455306122
+    },
+    {
+      "duration": 12.966054421999985,
+      "value": "Chorus",
+      "time": 182.151473922
+    },
+    {
+      "duration": 53.962925170000005,
+      "value": "no-function",
+      "time": 195.117528344
+    },
+    {
+      "duration": 0.049342404000014994,
+      "value": "Silence",
+      "time": 249.080453514
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 249.129795918
+    }
+  ]
+}

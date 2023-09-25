@@ -1,0 +1,114 @@
+{
+  "data": [
+    {
+      "duration": 0.255419501,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 0.0,
+      "value": "Intro",
+      "time": 0.255419501
+    },
+    {
+      "duration": 4.527891156000001,
+      "value": "voice",
+      "time": 0.255419501
+    },
+    {
+      "duration": 6.130975057,
+      "value": "no-function",
+      "time": 4.783310657
+    },
+    {
+      "duration": 6.195918366999999,
+      "value": "spoken",
+      "time": 10.914285714
+    },
+    {
+      "duration": 12.359183674,
+      "value": "no-function",
+      "time": 17.110204081
+    },
+    {
+      "duration": 12.302040816000002,
+      "value": "no-function",
+      "time": 29.469387755
+    },
+    {
+      "duration": 12.338775509999998,
+      "value": "no-function",
+      "time": 41.771428571
+    },
+    {
+      "duration": 6.212244898000002,
+      "value": "voice",
+      "time": 54.110204081
+    },
+    {
+      "duration": 6.175510204000005,
+      "value": "spoken",
+      "time": 60.322448979
+    },
+    {
+      "duration": 49.25714285699999,
+      "value": "Solo",
+      "time": 66.497959183
+    },
+    {
+      "duration": 12.38367346999999,
+      "value": "no-function",
+      "time": 115.75510204
+    },
+    {
+      "duration": 18.522448979000018,
+      "value": "voice",
+      "time": 128.13877551
+    },
+    {
+      "duration": 6.171428571999996,
+      "value": "spoken",
+      "time": 146.661224489
+    },
+    {
+      "duration": 12.285714285000012,
+      "value": "no-function",
+      "time": 152.832653061
+    },
+    {
+      "duration": 37.03265306199998,
+      "value": "no-function",
+      "time": 165.118367346
+    },
+    {
+      "duration": 6.146938774999995,
+      "value": "voice",
+      "time": 202.151020408
+    },
+    {
+      "duration": 6.186825397000007,
+      "value": "spoken",
+      "time": 208.297959183
+    },
+    {
+      "duration": 12.344421769000007,
+      "value": "Outro",
+      "time": 214.48478458
+    },
+    {
+      "duration": 15.999387754999987,
+      "value": "no-function",
+      "time": 226.829206349
+    },
+    {
+      "duration": 0.26047619000001987,
+      "value": "Silence",
+      "time": 242.828594104
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 243.089070294
+    }
+  ]
+}

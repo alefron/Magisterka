@@ -1,0 +1,114 @@
+{
+  "data": [
+    {
+      "duration": 0.049342403,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 0.226394558,
+      "value": "no-function",
+      "time": 0.049342403
+    },
+    {
+      "duration": 8.320090703,
+      "value": "Intro",
+      "time": 0.275736961
+    },
+    {
+      "duration": 16.346394558,
+      "value": "Instrumental",
+      "time": 8.595827664
+    },
+    {
+      "duration": 26.423219954,
+      "value": "Verse",
+      "time": 24.942222222
+    },
+    {
+      "duration": 26.682970522000005,
+      "value": "Verse",
+      "time": 51.365442176
+    },
+    {
+      "duration": 16.47594104299999,
+      "value": "Chorus",
+      "time": 78.048412698
+    },
+    {
+      "duration": 8.202947846,
+      "value": "Instrumental",
+      "time": 94.524353741
+    },
+    {
+      "duration": 26.460385486999996,
+      "value": "Verse",
+      "time": 102.727301587
+    },
+    {
+      "duration": 16.403990929999992,
+      "value": "Chorus",
+      "time": 129.187687074
+    },
+    {
+      "duration": 40.632199547,
+      "value": "Instrumental",
+      "time": 145.591678004
+    },
+    {
+      "duration": 58.168820861,
+      "value": "Solo",
+      "time": 186.223877551
+    },
+    {
+      "duration": 31.767052154000027,
+      "value": "Transition",
+      "time": 244.392698412
+    },
+    {
+      "duration": 7.9130612249999785,
+      "value": "Instrumental",
+      "time": 276.159750566
+    },
+    {
+      "duration": 26.071405895999987,
+      "value": "Verse",
+      "time": 284.072811791
+    },
+    {
+      "duration": 16.23956916100002,
+      "value": "Chorus",
+      "time": 310.144217687
+    },
+    {
+      "duration": 16.178707482999982,
+      "value": "Chorus",
+      "time": 326.383786848
+    },
+    {
+      "duration": 8.062199546000045,
+      "value": "Instrumental",
+      "time": 342.562494331
+    },
+    {
+      "duration": 12.780430838999962,
+      "value": "Verse",
+      "time": 350.624693877
+    },
+    {
+      "duration": 21.825532880000026,
+      "value": "no-function",
+      "time": 363.405124716
+    },
+    {
+      "duration": 0.023219955000001846,
+      "value": "Silence",
+      "time": 385.230657596
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 385.253877551
+    }
+  ]
+}

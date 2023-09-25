@@ -1,0 +1,114 @@
+{
+  "data": [
+    {
+      "duration": 0.28154195,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 10.578594104,
+      "value": "Intro",
+      "time": 0.28154195
+    },
+    {
+      "duration": 9.574897959,
+      "value": "Verse",
+      "time": 10.860136054
+    },
+    {
+      "duration": 9.490068027,
+      "value": "no-function",
+      "time": 20.435034013
+    },
+    {
+      "duration": 9.501904762000002,
+      "value": "no-function",
+      "time": 29.92510204
+    },
+    {
+      "duration": 4.750498866000001,
+      "value": "Transition",
+      "time": 39.427006802
+    },
+    {
+      "duration": 9.546031745999997,
+      "value": "Verse",
+      "time": 44.177505668
+    },
+    {
+      "duration": 9.501972790000003,
+      "value": "no-function",
+      "time": 53.723537414
+    },
+    {
+      "duration": 9.528140589000003,
+      "value": "no-function",
+      "time": 63.225510204
+    },
+    {
+      "duration": 4.783809523999992,
+      "value": "Transition",
+      "time": 72.753650793
+    },
+    {
+      "duration": 19.000045350999997,
+      "value": "Bridge",
+      "time": 77.537460317
+    },
+    {
+      "duration": 4.759750567000012,
+      "value": "Transition",
+      "time": 96.537505668
+    },
+    {
+      "duration": 9.512176870999994,
+      "value": "Solo",
+      "time": 101.297256235
+    },
+    {
+      "duration": 9.528231293000005,
+      "value": "no-function",
+      "time": 110.809433106
+    },
+    {
+      "duration": 9.527891155999981,
+      "value": "no-function",
+      "time": 120.337664399
+    },
+    {
+      "duration": 4.743900227000012,
+      "value": "Transition",
+      "time": 129.865555555
+    },
+    {
+      "duration": 9.504036280999998,
+      "value": "Verse",
+      "time": 134.609455782
+    },
+    {
+      "duration": 9.519863946000015,
+      "value": "no-function",
+      "time": 144.113492063
+    },
+    {
+      "duration": 9.543809522999993,
+      "value": "no-function",
+      "time": 153.633356009
+    },
+    {
+      "duration": 23.108548753000008,
+      "value": "Coda",
+      "time": 163.177165532
+    },
+    {
+      "duration": 2.5012244899999985,
+      "value": "Silence",
+      "time": 186.285714285
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 188.786938775
+    }
+  ]
+}

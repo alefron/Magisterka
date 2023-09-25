@@ -1,0 +1,79 @@
+{
+  "data": [
+    {
+      "duration": 0.195918367,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 0.0,
+      "value": "Head",
+      "time": 0.195918367
+    },
+    {
+      "duration": 15.036349205999999,
+      "value": "guitar",
+      "time": 0.195918367
+    },
+    {
+      "duration": 7.453605441999999,
+      "value": "Solo",
+      "time": 15.232267573
+    },
+    {
+      "duration": 7.244625851000002,
+      "value": "Head",
+      "time": 22.685873015
+    },
+    {
+      "duration": 21.966077096999996,
+      "value": "Solo",
+      "time": 29.930498866
+    },
+    {
+      "duration": 7.314285715000004,
+      "value": "gypsy",
+      "time": 51.896575963
+    },
+    {
+      "duration": 29.466122447999993,
+      "value": "Solo",
+      "time": 59.210861678
+    },
+    {
+      "duration": 29.35002267600001,
+      "value": "Solo",
+      "time": 88.676984126
+    },
+    {
+      "duration": 0.0,
+      "value": "Solo",
+      "time": 118.027006802
+    },
+    {
+      "duration": 29.466122448999997,
+      "value": "guitar",
+      "time": 118.027006802
+    },
+    {
+      "duration": 22.248911565000014,
+      "value": "Head",
+      "time": 147.493129251
+    },
+    {
+      "duration": 6.919546484999984,
+      "value": "Outro",
+      "time": 169.742040816
+    },
+    {
+      "duration": 3.008616780000011,
+      "value": "Silence",
+      "time": 176.661587301
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 179.670204081
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "duration": 0.040816326,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 17.467029477999997,
+      "value": "crowd-sounds",
+      "time": 0.040816326
+    },
+    {
+      "duration": 12.369705216,
+      "value": "Intro",
+      "time": 17.507845804
+    },
+    {
+      "duration": 9.813673469000001,
+      "value": "Verse",
+      "time": 29.87755102
+    },
+    {
+      "duration": 9.641904762000003,
+      "value": "Pre-Chorus",
+      "time": 39.691224489
+    },
+    {
+      "duration": 25.988956915999992,
+      "value": "Chorus",
+      "time": 49.333129251
+    },
+    {
+      "duration": 6.853151928000003,
+      "value": "Instrumental",
+      "time": 75.322086167
+    },
+    {
+      "duration": 9.669297052000005,
+      "value": "Verse",
+      "time": 82.175238095
+    },
+    {
+      "duration": 9.579569160999995,
+      "value": "Pre-Chorus",
+      "time": 91.844535147
+    },
+    {
+      "duration": 25.752585034000006,
+      "value": "Chorus",
+      "time": 101.424104308
+    },
+    {
+      "duration": 7.015963718999984,
+      "value": "Instrumental",
+      "time": 127.176689342
+    },
+    {
+      "duration": 9.680090703000019,
+      "value": "Verse",
+      "time": 134.192653061
+    },
+    {
+      "duration": 9.534784580000007,
+      "value": "Pre-Chorus",
+      "time": 143.872743764
+    },
+    {
+      "duration": 25.86759637199998,
+      "value": "Chorus",
+      "time": 153.407528344
+    },
+    {
+      "duration": 10.064149659999998,
+      "value": "Solo",
+      "time": 179.275124716
+    },
+    {
+      "duration": 16.324580499000007,
+      "value": "Outro",
+      "time": 189.339274376
+    },
+    {
+      "duration": 50.458594104000014,
+      "value": "applause",
+      "time": 205.663854875
+    },
+    {
+      "duration": 0.04054421799997954,
+      "value": "Silence",
+      "time": 256.122448979
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 256.162993197
+    }
+  ]
+}

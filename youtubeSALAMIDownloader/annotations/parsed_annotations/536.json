@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "duration": 0.293877551,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 72.802539682,
+      "value": "no-function",
+      "time": 0.293877551
+    },
+    {
+      "duration": 16.932721088000008,
+      "value": "Instrumental",
+      "time": 73.096417233
+    },
+    {
+      "duration": 63.70147392300001,
+      "value": "no-function",
+      "time": 90.029138321
+    },
+    {
+      "duration": 17.766553287999983,
+      "value": "Instrumental",
+      "time": 153.730612244
+    },
+    {
+      "duration": 19.588548752999998,
+      "value": "no-function",
+      "time": 171.497165532
+    },
+    {
+      "duration": 8.918253968000016,
+      "value": "Instrumental",
+      "time": 191.085714285
+    },
+    {
+      "duration": 2.8368480729999987,
+      "value": "Interlude",
+      "time": 200.003968253
+    },
+    {
+      "duration": 101.16136054400002,
+      "value": "Instrumental",
+      "time": 202.840816326
+    },
+    {
+      "duration": 0.0,
+      "value": "Interlude",
+      "time": 304.00217687
+    },
+    {
+      "duration": 17.544535147999966,
+      "value": "voice",
+      "time": 304.00217687
+    },
+    {
+      "duration": 26.434807256,
+      "value": "spoken",
+      "time": 321.546712018
+    },
+    {
+      "duration": 35.184195010999986,
+      "value": "Instrumental",
+      "time": 347.981519274
+    },
+    {
+      "duration": 16.67208616800002,
+      "value": "Outro",
+      "time": 383.165714285
+    },
+    {
+      "duration": 1.855600906999996,
+      "value": "Silence",
+      "time": 399.837800453
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 401.69340136
+    }
+  ]
+}

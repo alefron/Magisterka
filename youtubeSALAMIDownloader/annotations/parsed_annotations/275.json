@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "duration": 0.037006802,
+      "value": "Silence",
+      "time": 0.0
+    },
+    {
+      "duration": 55.667664398999996,
+      "value": "Exposition",
+      "time": 0.037006802
+    },
+    {
+      "duration": 29.32786848100001,
+      "value": "Development",
+      "time": 55.704671201
+    },
+    {
+      "duration": 61.253174603000005,
+      "value": "Recap",
+      "time": 85.032539682
+    },
+    {
+      "duration": 4.873197278999982,
+      "value": "Silence",
+      "time": 146.285714285
+    },
+    {
+      "duration": 0,
+      "value": "End",
+      "time": 151.158911564
+    }
+  ]
+}
