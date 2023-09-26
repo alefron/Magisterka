@@ -1,0 +1,6 @@
+6 epok,
+Train size: 356
+Test size: 76
+Val size: 76
+
+61 ms 

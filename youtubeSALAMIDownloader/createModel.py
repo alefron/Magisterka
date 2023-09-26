@@ -47,6 +47,8 @@ model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=[
     tf.keras.metrics.Recall()
 ])
 
+#model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+
 
 # zapisanie modelu
 model.save('model_base.h5')
