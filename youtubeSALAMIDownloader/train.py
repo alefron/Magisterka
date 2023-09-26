@@ -1,4 +1,8 @@
+from datetime import datetime
+
+import tensorflow.python.keras.metrics
 from tensorflow.keras.models import load_model
+from tensorflow.python.keras import metrics
 import tensorflow as tf
 import pandas as pd
 import numpy as np
@@ -9,9 +13,9 @@ from keras.callbacks import ModelCheckpoint, LambdaCallback
 
 from tensorflow.python.framework.ops import EagerTensor
 
-features_folder = 'features_sample/'
+features_folder = '/Volumes/Czerwony/features/2/'
 
-test_feature = 'test_feature.json'
+test_feature = '/Volumes/Czerwony/features/2/116_CQT.json'
 
 # Wczytanie modelu
 model = load_model('model_base.h5')
@@ -90,8 +94,8 @@ labels_coding = {
  'Verse': np.array([0., 0., 0., 0., 0., 0., 0., 0., 0., 1.])
 }
 
-
-all_ids = df['SONG_ID']
+selected_ids = [song_id for song_id in df['SONG_ID'] if os.path.exists(features_folder + f'{song_id}_CQT.json') and os.path.exists(annotations_path + f'{song_id}.json')]
+all_ids = pd.Series(selected_ids) if isinstance(df['SONG_ID'], pd.Series) else pd.DataFrame(selected_ids)
 
 def devide_set(all, small_percent):
     all_ids_count = len(all)
@@ -100,7 +104,7 @@ def devide_set(all, small_percent):
 
     all_ids_copy = all.copy()
 
-    validation_set = all_ids_copy.sample(n=val_count, random_state=42)
+    validation_set = all_ids_copy.sample(n=val_count)
 
     for elem in validation_set:
         all_ids_copy = all_ids_copy[all_ids_copy != elem]
@@ -120,6 +124,10 @@ def generator(ids):
                 mfcc = json.load(mfcc_file)
             with open(features_folder + f"{row['SONG_ID']}_Tempogram.json", 'r') as tempo_file:
                 tempogram = json.load(tempo_file)
+
+            print("\n")
+            print(f"SONG_ID: {row['SONG_ID']}")
+            print(f"piosenka: {index + 1} / {len(df_filtered)}")
 
             cqt_formatted = [np.array(group).T for group in cqt['Feature']['Vectors']]
             mfcc_formatted = [np.array(group).T for group in mfcc['Feature']['Vectors']]
@@ -141,7 +149,7 @@ def generator(ids):
             shuffled_labels = [labels[i] for i in indices]
 
             for i in range(len(shuffled_mfcc)):
-                if shuffled_cqt[i].shape == (84, 4, 2) and shuffled_mfcc[i].shape == (14, 4, 2) and shuffled_tempogram[i].shape == (192, 4, 2):
+                if shuffled_cqt[i].shape == (84, 4, 2) and shuffled_mfcc[i].shape == (14, 4, 2) and shuffled_tempogram[i].shape == (192, 4, 2) and shuffled_labels[i] is not None and shuffled_labels[i].shape == (10,):
                     yield {"cqt": shuffled_cqt[i], "mfcc": shuffled_mfcc[i], "tempogram": shuffled_tempogram[i]}, shuffled_labels[i]
 
             # Po wykorzystaniu danych usuwamy z pamięci
@@ -174,11 +182,9 @@ def calculate_labels(output_vector_length, song_id):
         for segment in annotations['data']:
             if segment['time'] <= timestamp_in_sec <= segment['time'] + segment['duration']:
                 segment_name = np.array(labels_coding[labels_dictionary[segment['value']]], dtype=float)
-                #tensor = tf.convert_to_tensor(segment_name, dtype=float)
                 break
 
         output.append(segment_name)
-    #output_array = np.array(output)
     return output
 
 def generator_test():
@@ -188,7 +194,7 @@ def generator_test():
         feature_formatted = [np.array(group).T for group in feature['Feature']['Vectors']]
         feature_formatted2 = [np.array([np.array([np.array([c["real"], c["imag"]]) for c in b]) for b in a]) for a in feature_formatted]
 
-        labels = calculate_labels(len(feature_formatted2), 10)
+        labels = calculate_labels(len(feature_formatted2), 116)
 
         indices = list(range(len(feature_formatted2)))
         random.shuffle(indices)
@@ -201,25 +207,32 @@ def generator_test():
             if shuffled_feature[i].shape == (5, 4, 2):
                 return {"cqt": shuffled_feature[i]}, shuffled_labels[i]
 
-#res = generator_test()
+res = generator_test()
 
 test_val, train = devide_set(all_ids, 0.3)
 test, val = devide_set(test_val, 0.5)
 
-dataset_train = tf.data.Dataset.from_generator(generator, args=train, output_types=({ "cqt": np.ndarray(shape=(84, 4, 2)), "mfcc": np.ndarray(shape=(14, 4, 2)), "tempogram": np.ndarray(shape=(192, 4, 2)) }, np.ndarray(shape=(1, 10))))
-dataset_test = tf.data.Dataset.from_generator(generator, args=test, output_types=({ "cqt": np.ndarray(shape=(84, 4, 2)), "mfcc": np.ndarray(shape=(14, 4, 2)), "tempogram": np.ndarray(shape=(192, 4, 2)) }, np.ndarray(shape=(1, 10))))
-dataset_val = tf.data.Dataset.from_generator(generator, args=val, output_types=({ "cqt": np.ndarray(shape=(84, 4, 2)), "mfcc": np.ndarray(shape=(14, 4, 2)), "tempogram": np.ndarray(shape=(192, 4, 2)) }, np.ndarray(shape=(1, 10))))
+print(f"train size: {len(train)}")
+print(f"test size: {len(test)}")
+print(f"val size: {len(val)}")
+
+dataset_train = tf.data.Dataset.from_generator(lambda: generator(train), output_types=({ "cqt": np.ndarray(shape=(84, 4, 2)), "mfcc": np.ndarray(shape=(14, 4, 2)), "tempogram": np.ndarray(shape=(192, 4, 2)) }, np.ndarray(shape=(1, 10))))
+dataset_test = tf.data.Dataset.from_generator(lambda: generator(test), output_types=({ "cqt": np.ndarray(shape=(84, 4, 2)), "mfcc": np.ndarray(shape=(14, 4, 2)), "tempogram": np.ndarray(shape=(192, 4, 2)) }, np.ndarray(shape=(1, 10))))
+dataset_val = tf.data.Dataset.from_generator(lambda: generator(val), output_types=({ "cqt": np.ndarray(shape=(84, 4, 2)), "mfcc": np.ndarray(shape=(14, 4, 2)), "tempogram": np.ndarray(shape=(192, 4, 2)) }, np.ndarray(shape=(1, 10))))
 
 dataset_train = dataset_train.batch(3)
 dataset_test = dataset_test.batch(3)
 dataset_val = dataset_val.batch(3)
 
 early_stopping = tf.keras.callbacks.EarlyStopping(monitor='loss', patience=3)
-model_checkpoint = ModelCheckpoint(filepath='model_{epoch:02d}.h5', save_freq='epoch')
-print_epochs = LambdaCallback(on_epoch_end=lambda epoch, logs: print(f'Epoch {epoch}/{logs["epochs"]}'))
+model_checkpoint = ModelCheckpoint(filepath=f'checkpoints/model_{datetime.now().strftime("%Y-%m-%d_%H-%M-%S")}' + '_{epoch:02d}.h5', save_freq='epoch')
 
 # Trenowanie modelu
-model.fit(dataset_train, validation_data=dataset_val, epochs=10, callbacks=[early_stopping, model_checkpoint, print_epochs])
+model.fit(dataset_train, validation_data=dataset_val, epochs=10, callbacks=[early_stopping, model_checkpoint])
+
+# Zapisuje zarówno architekturę, jak i wagi modelu
+model.save(f'models/model_base_{datetime.now().strftime("%Y-%m-%d_%H-%M-%S")}.h5')
+
 
 
 

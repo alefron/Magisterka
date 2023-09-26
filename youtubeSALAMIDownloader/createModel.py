@@ -1,6 +1,7 @@
 import tensorflow as tf
 from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Input, Conv2D, MaxPooling2D, Concatenate, Flatten, Dense
+from keras import metrics
 
 # Definiowanie wejść
 input_cqt = Input(shape=(84, 4, 2), name='cqt')
@@ -38,7 +39,14 @@ output = Dense(10, activation='softmax')(flattened)
 model = Model(inputs=[input_cqt, input_mfcc, input_tempo], outputs=output)
 
 # Kompilacja modelu
-model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=[
+    tf.keras.metrics.Accuracy(),
+    tf.keras.metrics.CategoricalAccuracy(),
+    tf.keras.metrics.TopKCategoricalAccuracy(k=3),
+    tf.keras.metrics.Precision(),
+    tf.keras.metrics.Recall()
+])
+
 
 # zapisanie modelu
 model.save('model_base.h5')
