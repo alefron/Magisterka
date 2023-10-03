@@ -5,8 +5,8 @@ import json
 import pygame
 import numpy as np
 # Wczytaj plik metadata.csv
-metadata = pd.read_csv('metadata_filtered_without_bad_labels.csv')[0:100]
-features_folder = "/Volumes/Czerwony/features/beat_features"
+metadata = pd.read_csv('metadata_filtered_without_bad_labels.csv')[900:]
+features_folder = "/Volumes/Zewnetrzny/magisterka/beat_features"
 records = []
 music_folder = 'all_music'
 done_sound_path = 'rp1.wav'

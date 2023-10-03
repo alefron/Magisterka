@@ -68,7 +68,7 @@ output = Dense(9, activation='softmax')(dropout_final)
 # Tworzenie modelu
 model = Model(inputs=[input_cqt, input_mfcc, input_tempo], outputs=output)
 
-optimizer = Adam(learning_rate=0.00001)
+optimizer = Adam(learning_rate=0.01)
 #optimizer = Adagrad(learning_rate=0.01)
 # Kompilacja modelu
 model.compile(optimizer=optimizer, loss='categorical_crossentropy', metrics=[

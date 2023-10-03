@@ -1,19 +1,12 @@
 from datetime import datetime
-
-import tensorflow.python.keras.metrics
 from tensorflow.keras.models import load_model
-from tensorflow.python.keras import metrics
 import tensorflow as tf
 import pandas as pd
 import numpy as np
 import json
 import os
-import random
-from keras.callbacks import ModelCheckpoint, LambdaCallback
+from keras.callbacks import ModelCheckpoint
 from tensorflow.keras.callbacks import LearningRateScheduler
-from tensorflow.keras.callbacks import CSVLogger
-from tensorflow.keras.callbacks import Callback
-import csv
 from customLogger import CustomCSVLogger
 
 def schedule(epoch, lr):
@@ -22,21 +15,25 @@ def schedule(epoch, lr):
     else:
         return lr * tf.math.exp(-0.1)
 
-from tensorflow.python.framework.ops import EagerTensor
+features_train_folder = '/Volumes/Czerwony/features/beat_features_train/'
+features_val_folder = '/Volumes/Czerwony/features/beat_features_val/'
+features_test_folder = '/Volumes/Czerwony/features/beat_features_test/'
 
-features_folder = '/Volumes/Czerwony/features/beat_features/'
+now = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 
 test_feature = '/Volumes/Czerwony/features/2/116_CQT.json'
 
 # Wczytanie modelu
 model = load_model('model_base2.h5')
 
+annotations_path = 'annotations/parsed_annotations/'
+
 # Wczytanie pliku CSV
 df = pd.read_csv('metadata_filtered_without_bad_labels.csv')
-df = df.sample(frac=1).reset_index(drop=True)
-#df = df[df['SOURCE'] == 'IA']
+train_ids = [song_id for song_id in df['SONG_ID'] if os.path.exists(features_train_folder + f'{song_id}_CQT.json') and os.path.exists(annotations_path + f'{song_id}.json')]
+df_train = df[df['SONG_ID'].isin(train_ids)]
 
-annotations_path = 'annotations/parsed_annotations/'
+#df = df[df['SOURCE'] == 'IA']
 
 # slownik labeli
 labels_dictionary = {
@@ -103,27 +100,11 @@ labels_coding = {
  'Verse': np.array([0., 0., 0., 0., 0., 0., 0., 0., 1.])
 }
 
-selected_ids = [song_id for song_id in df['SONG_ID'] if os.path.exists(features_folder + f'{song_id}_CQT.json') and os.path.exists(annotations_path + f'{song_id}.json')]
-all_ids = pd.Series(selected_ids) if isinstance(df['SONG_ID'], pd.Series) else pd.DataFrame(selected_ids)
-
-def devide_set(all, small_percent):
-    all_ids_count = len(all)
-    val_count = int(small_percent * all_ids_count)
-    train_count = all_ids_count - val_count
-
-    all_ids_copy = all.copy()
-
-    validation_set = all_ids_copy.sample(n=val_count)
-
-    for elem in validation_set:
-        all_ids_copy = all_ids_copy[all_ids_copy != elem]
-
-    train_set = all_ids_copy
-
-    return validation_set, train_set
-
-
-def generator(ids):
+def generateDataset(ids, features_folder):
+    cqtData = []
+    mfccData = []
+    tempogramData = []
+    labelsData = []
     df_filtered = df[df['SONG_ID'].isin(ids)]
     for index, row in df_filtered.iterrows():
         if os.path.exists(features_folder + f"{row['SONG_ID']}_CQT.json") and os.path.exists(features_folder + f"{row['SONG_ID']}_MFCC.json") and os.path.exists(features_folder + f"{row['SONG_ID']}_Tempogram.json"):
@@ -134,10 +115,6 @@ def generator(ids):
             with open(features_folder + f"{row['SONG_ID']}_Tempogram.json", 'r') as tempo_file:
                 tempograms = json.load(tempo_file)['Feature']['Vectors']
 
-            print("\n")
-            print(f"SONG_ID: {row['SONG_ID']}")
-            print(f"piosenka: {index + 1} / {len(df_filtered)}")
-
             beat_times = [np.float64(float(cqt[0])) for cqt in cqts]
 
             labels = calculate_labels(beat_times, row['SONG_ID'])
@@ -146,11 +123,8 @@ def generator(ids):
             mfccs_values = [np.array([np.float32(float(value)) for value in mfcc[1]]) for mfcc in mfccs]
             tempograms_values = [np.array([np.float64(float(value)) for value in tempo[1]]) for tempo in tempograms]
 
-            indices = list(range(len(cqts_values)))
-            random.shuffle(indices)
-
-            for i in indices:
-                if 2 <= i <= (len(indices) - 2):
+            for i, value in enumerate(cqts_values):
+                if 2 <= i <= (len(cqts_values) - 2):
                     if cqts_values[i].shape == (84,) and mfccs_values[i].shape == (14,) and tempograms_values[i].shape == (192,) and labels[i] is not None and labels[i].shape == (9,):
                         if cqts_values[i+1].shape == (84,) and mfccs_values[i+1].shape == (14,) and tempograms_values[i+1].shape == (192,):
                             if cqts_values[i-2].shape == (84,) and mfccs_values[i-2].shape == (14,) and tempograms_values[i-2].shape == (192,):
@@ -163,27 +137,12 @@ def generator(ids):
                                     mfcc_expanded = np.array([[[b] for b in a] for a in mfcc_result])
                                     tempogram_expanded = np.array([[[b] for b in a] for a in tempogram_result])
 
-                                    yield { "cqt": cqt_expanded, "mfcc": mfcc_expanded, "tempogram": tempogram_expanded }, labels[i]
+                                    cqtData.append(cqt_expanded)
+                                    mfccData.append(mfcc_expanded)
+                                    tempogramData.append(tempogram_expanded)
+                                    labelsData.append(labels[i])
 
-            # Po wykorzystaniu danych usuwamy z pamięci
-            del cqt_file
-            del mfcc_file
-            del tempo_file
-            del beat_times
-            del cqts
-            del mfccs
-            del tempograms
-            del labels
-            del cqts_values
-            del mfccs_values
-            del tempograms_values
-            del indices
-            del cqt_result
-            del mfcc_result
-            del tempogram_result
-            del cqt_expanded
-            del mfcc_expanded
-            del tempogram_expanded
+    return np.array(cqtData), np.array(mfccData), np.array(tempogramData), np.array(labelsData)
 
 
 def calculate_labels(beat_times, song_id):
@@ -206,62 +165,83 @@ def calculate_labels(beat_times, song_id):
         output.append(segment_name)
     return output
 
-def generator_test():
-    if os.path.exists(test_feature):
-        with open(test_feature) as feature_file:
-            feature = json.load(feature_file)
-        feature_formatted = [np.array(group).T for group in feature['Feature']['Vectors']]
-        feature_formatted2 = [np.array([np.array([np.array([c["real"], c["imag"]]) for c in b]) for b in a]) for a in feature_formatted]
-
-        labels = calculate_labels(len(feature_formatted2), 116)
-
-        indices = list(range(len(feature_formatted2)))
-        random.shuffle(indices)
-
-        # Mieszanie obu list w tym samym porządku
-        shuffled_feature = [feature_formatted2[i] for i in indices]
-        shuffled_labels = [labels[i] for i in indices]
-
-        for i in range(len(shuffled_feature)):
-            if shuffled_feature[i].shape == (5, 4, 2):
-                return {"cqt": shuffled_feature[i]}, shuffled_labels[i]
-
-
-
-val, train = devide_set(all_ids, 0.15)
-
-#res = generator(train)
-
-print(f"train size: {len(train)}")
-print(f"val size: {len(val)}")
-
-dataset_train = tf.data.Dataset.from_generator(lambda: generator(train), output_types=({ "cqt": np.ndarray(shape=(84, 4, 1), dtype=np.complex64), "mfcc": np.ndarray(shape=(14, 4, 1), dtype=np.float32), "tempogram": np.ndarray(shape=(192, 4, 1), dtype=np.float64) }, np.ndarray(shape=(1, 9))))
-dataset_val = tf.data.Dataset.from_generator(lambda: generator(val), output_types=({ "cqt": np.ndarray(shape=(84, 4, 1), dtype=np.complex64), "mfcc": np.ndarray(shape=(14, 4, 1), dtype=np.float32), "tempogram": np.ndarray(shape=(192, 4, 1), dtype=np.float64) }, np.ndarray(shape=(1, 9))))
-
-
-#dataset_train = tf.data.Dataset.from_generator(lambda: generator(train), output_types=({"cqt": np.ndarray, "mfcc": np.ndarray, "tempogram": np.ndarray}, tf.Tensor))
-#dataset_test = tf.data.Dataset.from_generator(lambda: generator(test), output_types=({"cqt": tf.Tensor, "mfcc": tf.Tensor, "tempogram": tf.Tensor}, tf.Tensor))
-#dataset_val = tf.data.Dataset.from_generator(lambda: generator(val), output_types=({"cqt": tf.Tensor, "mfcc": tf.Tensor, "tempogram": tf.Tensor}, tf.Tensor))
-
-dataset_train = dataset_train.batch(3)
-dataset_val = dataset_val.batch(3)
-
 early_stopping = tf.keras.callbacks.EarlyStopping(monitor='loss', patience=3)
 model_checkpoint = ModelCheckpoint(filepath=f'checkpoints/model_{datetime.now().strftime("%Y-%m-%d_%H-%M-%S")}' + '_{epoch:02d}.h5', save_freq='epoch')
 lr_schedule = LearningRateScheduler(schedule)
-# Definiowanie ścieżki do zapisu pliku CSV
-#csv_logger = CSVLogger('training.log', separator=',', append=False)
-csv_logger = CustomCSVLogger('training.csv', separator=',', append=False)
-
-#model = load_model('checkpoints/model_2023-09-29_19-17-51_17.h5')
-#result = model.evaluate(dataset_test)
-
-# Trenowanie modelu
-model.fit(dataset_train, validation_data=dataset_val, epochs=100, callbacks=[early_stopping, model_checkpoint, csv_logger])
 
 # Zapisuje zarówno architekturę, jak i wagi modelu
-model.save(f'models/model_base_{datetime.now().strftime("%Y-%m-%d_%H-%M-%S")}.h5')
+#model.save(f'models/model_base_{datetime.now().strftime("%Y-%m-%d_%H-%M-%S")}.h5')
 
+#trenowanie po kawałku w pętli
+step = 200
+epochs = 100
+
+print('Generating validation data...')
+
+val_ids = [song_id for song_id in df['SONG_ID'] if os.path.exists(features_val_folder + f'{song_id}_CQT.json') and os.path.exists(annotations_path + f'{song_id}.json')]
+val_ids_series = pd.Series(val_ids) if isinstance(df['SONG_ID'], pd.Series) else pd.DataFrame(val_ids)
+
+cqt_val, mfcc_val, tempogram_val, labels_val = generateDataset(val_ids_series, features_val_folder)
+
+
+for epoch_number in range(1, epochs, 1):
+    print(f'EPOCH: {epoch_number}:')
+    historical_val_loss = []
+    history = {}
+    for i in range(0, len(df_train), step):
+        low_index = i
+        high_index = i + step
+        if high_index >= len(df_train):
+            high_index = len(df_train) - 1
+
+        print(f'EPOCH: {epoch_number}, Songs range: {low_index}-{high_index}')
+
+        df_part = df_train[low_index:high_index]
+        part_ids = [song_id for song_id in df_part['SONG_ID'] if os.path.exists(features_train_folder + f'{song_id}_CQT.json') and os.path.exists(annotations_path + f'{song_id}.json')]
+        ids_series = pd.Series(part_ids) if isinstance(df_part['SONG_ID'], pd.Series) else pd.DataFrame(part_ids)
+
+        print('Generating training data...')
+        cqt, mfcc, tempogram, labels_data = generateDataset(ids_series, features_train_folder)
+        print(len(cqt), len(mfcc), len(tempogram), len(labels_data))
+
+        history = model.fit(
+            [cqt, mfcc, tempogram],
+            labels_data,
+            epochs=1,
+            validation_data=([cqt_val, mfcc_val, tempogram_val], labels_val),
+            shuffle=True
+        )
+        del cqt
+        del mfcc
+        del tempogram
+        del df_part
+
+    model.save(f'checkpoints/{now}_epoch_{epoch_number}.h5')
+
+    last_epoch_metrics = {metric: values[-1] for metric, values in history.history.items()}
+    df_metrics = pd.DataFrame(last_epoch_metrics, index=[0])
+
+    if not os.path.exists(f'training_{now}.csv'):
+        # Tworzymy nowy DataFrame z nagłówkami
+        df_header = pd.DataFrame(columns=['epoch', 'accuracy', 'categorical_accuracy',
+                                          'top_k_categorical_accuracy', 'loss', 'precision',
+                                          'recall', 'val_categorical_accuracy',
+                                          'val_top_k_categorical_accuracy'])
+        # Zapisujemy do pliku
+        df_header.to_csv(f'training_{now}.csv', index=False)
+
+    df_metrics.to_csv(f'training_{now}.csv', mode='a', header=False, index=False)
+    print(f'Epoch {epoch_number} saved to csv')
+
+    if historical_val_loss.count == 3:
+        if historical_val_loss[0] < historical_val_loss[1] < historical_val_loss[2]:
+            print(f'early stopping after {epoch_number} epoch')
+            break
+        historical_val_loss[0] = historical_val_loss[1]
+        historical_val_loss[1] = historical_val_loss[2]
+        historical_val_loss[2] = float(df_metrics['val_loss'])
+    else:
+        historical_val_loss.append(df_metrics['val_loss'])
 
 
 
