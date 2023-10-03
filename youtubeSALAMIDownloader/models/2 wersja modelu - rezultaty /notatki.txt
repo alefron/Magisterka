@@ -1,0 +1,7 @@
+4 epok, - early stopping
+Train size: 200
+Test size: 42
+Val size: 43
+
+Categorical_accuracy - 20%
+Accuracy - 56%

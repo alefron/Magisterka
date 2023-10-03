@@ -150,7 +150,7 @@ def generator(ids):
 
             for i in range(len(shuffled_mfcc)):
                 if shuffled_cqt[i].shape == (84, 4, 2) and shuffled_mfcc[i].shape == (14, 4, 2) and shuffled_tempogram[i].shape == (192, 4, 2) and shuffled_labels[i] is not None and shuffled_labels[i].shape == (10,):
-                    yield {"cqt": shuffled_cqt[i], "mfcc": shuffled_mfcc[i], "tempogram": shuffled_tempogram[i]}, shuffled_labels[i]
+                    return {"cqt": shuffled_cqt[i], "mfcc": shuffled_mfcc[i], "tempogram": shuffled_tempogram[i]}, shuffled_labels[i]
 
             # Po wykorzystaniu danych usuwamy z pamięci
             del cqt
@@ -207,10 +207,12 @@ def generator_test():
             if shuffled_feature[i].shape == (5, 4, 2):
                 return {"cqt": shuffled_feature[i]}, shuffled_labels[i]
 
-res = generator_test()
+
 
 test_val, train = devide_set(all_ids, 0.3)
 test, val = devide_set(test_val, 0.5)
+
+res = generator(train)
 
 print(f"train size: {len(train)}")
 print(f"test size: {len(test)}")
