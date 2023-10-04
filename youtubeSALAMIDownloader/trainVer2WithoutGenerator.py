@@ -8,6 +8,7 @@ import os
 from keras.callbacks import ModelCheckpoint
 from tensorflow.keras.callbacks import LearningRateScheduler
 from customLogger import CustomCSVLogger
+from analyzeDataset import analyzeDataset
 
 def schedule(epoch, lr):
     if epoch < 10:
@@ -182,7 +183,21 @@ val_ids = [song_id for song_id in df['SONG_ID'] if os.path.exists(features_val_f
 val_ids_series = pd.Series(val_ids) if isinstance(df['SONG_ID'], pd.Series) else pd.DataFrame(val_ids)
 
 cqt_val, mfcc_val, tempogram_val, labels_val = generateDataset(val_ids_series, features_val_folder)
+val_set_stats = analyzeDataset(labels_val)
+for word, stats in val_set_stats.items():
+    print(f"Word: {word}, Count: {stats['count']}, Percentage: {stats['percentage']}%")
 
+entire_train_stats = {
+ 'Bridge': 0,
+ 'Chorus': 0,
+ 'Instrumental': 0,
+ 'Interlude': 0,
+ 'Intro': 0,
+ 'No-function': 0,
+ 'Outro': 0,
+ 'Silence': 0,
+ 'Verse': 0
+}
 
 for epoch_number in range(1, epochs, 1):
     print(f'EPOCH: {epoch_number}:')
@@ -202,7 +217,11 @@ for epoch_number in range(1, epochs, 1):
 
         print('Generating training data...')
         cqt, mfcc, tempogram, labels_data = generateDataset(ids_series, features_train_folder)
-        print(len(cqt), len(mfcc), len(tempogram), len(labels_data))
+        train_set_stats = analyzeDataset(labels_data)
+        for word, stats in train_set_stats.items():
+            print(f"Word: {word}, Count: {stats['count']}, Percentage: {stats['percentage']}%")
+            if epoch_number == 1:
+                entire_train_stats[word] = entire_train_stats[word] + stats['count']
 
         history = model.fit(
             [cqt, mfcc, tempogram],
