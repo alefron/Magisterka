@@ -25,16 +25,17 @@ now = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 test_feature = '/Volumes/Czerwony/features/2/116_CQT.json'
 
 # Wczytanie modelu
-model = load_model('model_base2.h5')
+model = load_model('model_base3.h5')
 
 annotations_path = 'annotations/parsed_annotations/'
 
 # Wczytanie pliku CSV
 df = pd.read_csv('metadata_filtered_without_bad_labels.csv')
+#df = df[df['SOURCE'] == 'IA']
 train_ids = [song_id for song_id in df['SONG_ID'] if os.path.exists(features_train_folder + f'{song_id}_CQT.json') and os.path.exists(annotations_path + f'{song_id}.json')]
 df_train = df[df['SONG_ID'].isin(train_ids)]
 
-#df = df[df['SOURCE'] == 'IA']
+
 
 # slownik labeli
 labels_dictionary = {
@@ -203,11 +204,11 @@ for epoch_number in range(1, epochs, 1):
     print(f'EPOCH: {epoch_number}:')
     historical_val_loss = []
     history = {}
-    for i in range(0, len(df_train), step):
+    for i in range(0, df_train.shape[0], step):
         low_index = i
         high_index = i + step
-        if high_index >= len(df_train):
-            high_index = len(df_train) - 1
+        if high_index >= df_train.shape[0]:
+            high_index = df_train.shape[0] - 1
 
         print(f'EPOCH: {epoch_number}, Songs range: {low_index}-{high_index}')
 
@@ -224,11 +225,12 @@ for epoch_number in range(1, epochs, 1):
                 entire_train_stats[word] = entire_train_stats[word] + stats['count']
 
         history = model.fit(
-            [cqt, mfcc, tempogram],
+            [cqt, tempogram],
             labels_data,
             epochs=1,
-            validation_data=([cqt_val, mfcc_val, tempogram_val], labels_val),
-            shuffle=True
+            validation_data=([cqt_val, tempogram_val], labels_val),
+            shuffle=True,
+            batch_size=100
         )
         del cqt
         del mfcc
@@ -242,10 +244,10 @@ for epoch_number in range(1, epochs, 1):
 
     if not os.path.exists(f'training_{now}.csv'):
         # Tworzymy nowy DataFrame z nagłówkami
-        df_header = pd.DataFrame(columns=['epoch', 'accuracy', 'categorical_accuracy',
-                                          'top_k_categorical_accuracy', 'loss', 'precision',
-                                          'recall', 'val_categorical_accuracy',
-                                          'val_top_k_categorical_accuracy'])
+        df_header = pd.DataFrame(columns=['loss', 'accuracy', 'categorical_accuracy',
+                                          'top_k_categorical_accuracy', 'precision',
+                                          'recall', 'val_loss', 'val_accuracy', 'val_categorical_accuracy',
+                                          'val_top_k_categorical_accuracy', 'val_precision', 'val_recall'])
         # Zapisujemy do pliku
         df_header.to_csv(f'training_{now}.csv', index=False)
 
@@ -255,7 +257,7 @@ for epoch_number in range(1, epochs, 1):
     if historical_val_loss.count == 3:
         if historical_val_loss[0] < historical_val_loss[1] < historical_val_loss[2]:
             print(f'early stopping after {epoch_number} epoch')
-            break
+            #break
         historical_val_loss[0] = historical_val_loss[1]
         historical_val_loss[1] = historical_val_loss[2]
         historical_val_loss[2] = float(df_metrics['val_loss'])
