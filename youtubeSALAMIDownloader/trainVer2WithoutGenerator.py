@@ -10,12 +10,6 @@ from tensorflow.keras.callbacks import LearningRateScheduler
 from customLogger import CustomCSVLogger
 from analyzeDataset import analyzeDataset
 
-def schedule(epoch, lr):
-    if epoch < 10:
-        return lr
-    else:
-        return lr * tf.math.exp(-0.1)
-
 features_train_folder = '/Volumes/Czerwony/features/beat_features_train/'
 features_val_folder = '/Volumes/Czerwony/features/beat_features_val/'
 features_test_folder = '/Volumes/Czerwony/features/beat_features_test/'
@@ -135,7 +129,8 @@ def generateDataset(ids, features_folder):
                                     mfcc_result = np.vstack((mfccs_values[i - 2], mfccs_values[i - 1], mfccs_values[i], mfccs_values[i + 1])).T
                                     tempogram_result = np.vstack((tempograms_values[i - 2], tempograms_values[i - 1], tempograms_values[i], tempograms_values[i + 1])).T
 
-                                    cqt_expanded = np.array([[[b] for b in a] for a in cqt_result])
+                                    cqt_no_complex = np.array([[[float(compl.real), float(compl.imag)] for compl in four] for four in cqt_result])
+                                    cqt_expanded = np.array([[b for b in a] for a in cqt_no_complex])
                                     mfcc_expanded = np.array([[[b] for b in a] for a in mfcc_result])
                                     tempogram_expanded = np.array([[[b] for b in a] for a in tempogram_result])
 
@@ -166,13 +161,6 @@ def calculate_labels(beat_times, song_id):
 
         output.append(segment_name)
     return output
-
-early_stopping = tf.keras.callbacks.EarlyStopping(monitor='loss', patience=3)
-model_checkpoint = ModelCheckpoint(filepath=f'checkpoints/model_{datetime.now().strftime("%Y-%m-%d_%H-%M-%S")}' + '_{epoch:02d}.h5', save_freq='epoch')
-lr_schedule = LearningRateScheduler(schedule)
-
-# Zapisuje zarówno architekturę, jak i wagi modelu
-#model.save(f'models/model_base_{datetime.now().strftime("%Y-%m-%d_%H-%M-%S")}.h5')
 
 #trenowanie po kawałku w pętli
 step = 200

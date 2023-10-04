@@ -6,7 +6,7 @@ from tensorflow.keras.optimizers.legacy import Adam
 from keras import metrics
 
 # Definiowanie wejść
-input_cqt = Input(shape=(84, 4, 1), name='cqt')
+input_cqt = Input(shape=(84, 4, 2), name='cqt')
 input_tempo = Input(shape=(192, 4, 1), name='tempogram')
 
 # Definiowanie warstw Conv2D z odpowiednimi parametrami
