@@ -6,6 +6,7 @@ import os
 import csv
 import json
 from analyzeDataset import analyzeDataset
+from collections import Counter
 
 # slownik labeli
 labels_dictionary = {
@@ -105,16 +106,18 @@ def generateDataset(ids, features_folder):
                                     mfcc_result = np.vstack((mfccs_values[i - 2], mfccs_values[i - 1], mfccs_values[i], mfccs_values[i + 1])).T
                                     tempogram_result = np.vstack((tempograms_values[i - 2], tempograms_values[i - 1], tempograms_values[i], tempograms_values[i + 1])).T
 
-                                    cqt_expanded = np.array([[[b] for b in a] for a in cqt_result])
+                                    cqt_no_complex = np.array([[[float(compl.real), float(compl.imag)] for compl in four] for four in cqt_result])
+                                    cqt_expanded = np.array([[b for b in a] for a in cqt_no_complex])
                                     mfcc_expanded = np.array([[[b] for b in a] for a in mfcc_result])
                                     tempogram_expanded = np.array([[[b] for b in a] for a in tempogram_result])
 
-                                    cqtData.append(cqt_expanded)
-                                    mfccData.append(mfcc_expanded)
-                                    tempogramData.append(tempogram_expanded)
-                                    labelsData.append(labels[i])
+                                    cqtData.append([cqt_expanded, row['SONG_ID'], beat_times[i]])
+                                    mfccData.append([mfcc_expanded, row['SONG_ID'], beat_times[i]])
+                                    tempogramData.append([tempogram_expanded, row['SONG_ID'], beat_times[i]])
+                                    labelsData.append([labels[i], row['SONG_ID']])
 
-    return np.array(cqtData), np.array(mfccData), np.array(tempogramData), np.array(labelsData)
+    return cqtData, mfccData, tempogramData, labelsData
+
 
 def calculate_labels(beat_times, song_id):
     output = []
@@ -136,15 +139,66 @@ def calculate_labels(beat_times, song_id):
         output.append(segment_name)
     return output
 
+def getSongTemplate(song_labels, song_beats, song_pred_labels=[]):
+    template = []
+    if len(song_labels) == len(song_beats):
+        from_idx = 0
+        previous_label = song_labels[0]
+        for index, el in enumerate(song_labels):
+            if np.array_equal(song_labels[index][0], previous_label[0]):
+                previous_label = song_labels[index]
+                continue
+            else:
+                to_idx = index
+                label_value = []
+                if len(song_pred_labels) == 0:
+                    label_value = song_labels[index - 1]
+                else:
+                    labels_for_segment = song_pred_labels[from_idx:to_idx]
+                    labels_for_segment = [lab[0] for lab in labels_for_segment]
+
+                    arrays_counter = Counter(tuple(array) for array in labels_for_segment)
+                    label_value = [np.array(max(arrays_counter, key=arrays_counter.get)), -1]
+
+                label_value_name = ''
+                for word, array in labels_coding.items():
+                    if np.array_equal(array, label_value[0]):
+                        label_value_name = word
+                        break
+
+                segment = {
+                    "from_idx": from_idx,
+                    "to_idx": to_idx,
+                    "from_time": song_beats[from_idx],
+                    "to_time": song_beats[to_idx],
+                    "true_label": label_value[0],
+                    "true_label_name": label_value_name
+                }
+                template.append(segment)
+                from_idx = index
+                previous_label = song_labels[index]
+        return template
+
+def convertPredToOneHot(prediction_labels, song_id):
+    output = []
+    for pred in prediction_labels:
+        max = np.max(pred)
+        for i, val in enumerate(pred):
+            if val == max:
+                pred[i] = 1.
+            else:
+                pred[i] = 0.
+        output.append([pred, song_id])
+    return output
 
 
 features_train_folder = '/Volumes/Czerwony/features/beat_features_train/'
-features_val_folder = '/Volumes/Czerwony/features/beat_features_val/'
+features_val_folder = '/Users/aleksandrafront/Desktop/g/'
 features_test_folder = '/Volumes/Czerwony/features/beat_features_test/'
 annotations_path = 'annotations/parsed_annotations/'
 
-df = pd.read_csv('metadata_filtered_without_bad_labels.csv')[0:230]
-val_ids = [song_id for song_id in df['SONG_ID'] if os.path.exists(features_val_folder + f'{song_id}_CQT.json') and os.path.exists(annotations_path + f'{song_id}.json')]
+df = pd.read_csv('metadata_filtered_without_bad_labels.csv')
+val_ids = [song_id for song_id in df['SONG_ID'] if os.path.exists(features_val_folder + f'{song_id}_CQT.json') and os.path.exists(annotations_path + f'{song_id}.json')][0:10]
 df_val = df[df['SONG_ID'].isin(val_ids)]
 val_ids_series = pd.Series(val_ids) if isinstance(df_val['SONG_ID'], pd.Series) else pd.DataFrame(val_ids)
 
@@ -153,15 +207,35 @@ train_ids = [song_id for song_id in df['SONG_ID'] if os.path.exists(features_tra
 df_train = df[df['SONG_ID'].isin(train_ids)]
 train_ids_series = pd.Series(train_ids) if isinstance(df_train['SONG_ID'], pd.Series) else pd.DataFrame(train_ids)
 
-model = load_model('checkpoints/2023-10-03_23-00-51_epoch_8.h5')
-cqt, mfcc, tempogram, labels = generateDataset(train_ids_series, features_train_folder)
-stats_dataset = analyzeDataset(labels)
+model = load_model('checkpoints/2023-10-04_22-19-47_epoch_1.h5')
+cqt, mfcc, tempogram, labels = generateDataset(val_ids_series, features_val_folder)
+stats_dataset = analyzeDataset(np.array([row[0] for row in labels]))
 for word, stats in stats_dataset.items():
     print(f"Word: {word}, Count: {stats['count']}, Percentage: {stats['percentage']}%")
 
-predictions = model.predict([cqt, mfcc, tempogram])
-y_test = np.argmax(labels, axis=1)
+predictions = model.predict([np.array([row[0] for row in cqt]), np.array([row[0] for row in tempogram])])
+y_test = np.argmax(np.array([row[0] for row in labels]), axis=1)
 y_pred = np.argmax(predictions, axis=1)
-print(classification_report(y_test, y_pred))
+#print(classification_report(y_test, y_pred))
+
+songs = []
+
+for song_id in df['SONG_ID']:
+    cqt_for_song = [(index, element) for index, element in enumerate(cqt) if element[1] == song_id]
+    if len(cqt_for_song) > 0:
+        first_idx_for_song = cqt_for_song[0][0]
+        after_last_idx_for_song = cqt_for_song[-1][0] + 1
+        cqt_for_song = [row[1] for row in cqt_for_song]
+
+        beats = [element[2] for element in cqt_for_song]
+        true_labs = [lab for lab in labels if lab[1] == song_id]
+        pred_labs = predictions[first_idx_for_song:after_last_idx_for_song]
+        pred_labs = convertPredToOneHot(pred_labs, song_id)
+        song_template = getSongTemplate(true_labs, beats)
+        song_pred_template = getSongTemplate(true_labs, beats, song_pred_labels=pred_labs)
+
+
+
+
 print('DONE')
 
